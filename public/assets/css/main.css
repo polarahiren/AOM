@@ -15401,6 +15401,13 @@ p.error-message {
   cursor: pointer;
 }
 
+.btn {
+  padding: 13px 20px 15px 26px;
+}
+.btn.btn-secondary {
+  color: #ffffff;
+}
+
 .form-control-label {
   font-size: 14px;
   letter-spacing: -0.14px;
@@ -15411,16 +15418,24 @@ p.error-message {
   padding: 13px 18px;
   border: 1px solid rgba(6, 66, 63, 0.46);
   border-radius: 10px;
-  opacity: 0.46;
+  line-height: 18px;
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  transition: all 500ms ease;
+  /* IE 10+, Fx 29+ */
 }
 .input-control::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.46);
 }
 .input-control:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.46);
 }
 .input-control::placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.46);
+}
+.input-control:hover, .input-control:focus {
+  border-color: #06423F;
 }
 
 .card-hover img {
@@ -16298,6 +16313,13 @@ body.login-page main {
   body.login-page {
     height: auto;
   }
+}
+
+.content-box.register-box img.img-fluid {
+  top: -90px;
+  right: -120px;
+  width: 200px;
+  height: 182px;
 }
 
 body#tinymce {

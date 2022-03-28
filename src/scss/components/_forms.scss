@@ -7,8 +7,13 @@
     padding: 13px 18px;
     border: 1px solid rgba($primary, $alpha: 0.46);
     border-radius: 10px;
-    opacity: 0.46;
+    line-height: 18px;
+    @include generate-transition(all, 500ms, ease);
     &::placeholder{
-        color: rgba($black, $alpha: 0.30);
+        color: rgba($black, $alpha: .46);
+    }
+    &:hover,
+    &:focus{
+        border-color: $primary;
     }
 }
