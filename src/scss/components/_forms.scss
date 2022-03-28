@@ -1,0 +1,14 @@
+.form-control-label{
+    font-size: $bodyS;
+    letter-spacing: -0.14px;
+    line-height: 20px;
+}
+.input-control{
+    padding: 13px 18px;
+    border: 1px solid rgba($primary, $alpha: 0.46);
+    border-radius: 10px;
+    opacity: 0.46;
+    &::placeholder{
+        color: rgba($black, $alpha: 0.30);
+    }
+}

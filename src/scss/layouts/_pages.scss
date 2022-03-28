@@ -1,0 +1,19 @@
+// Login Page
+.login-section{
+    width: 100%;
+    @include media-breakpoint-down(sm){
+        .container{
+            max-width: 100%;
+        }
+    }
+}
+
+body.login-page{
+    height: 100vh;
+    main {
+        height: 100%;
+    }
+    @include media-breakpoint-down(lg){
+        height: auto;
+    }
+}

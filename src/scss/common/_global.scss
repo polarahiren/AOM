@@ -5,6 +5,7 @@ body, html{
   padding: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: $font-rocgrotesk;
 }
 
 p{
@@ -24,6 +25,14 @@ a {
 a, input, button{
  outline: none !important;
  box-shadow: none !important;
+}
+
+.font-rocgrotesk{
+  font-family: $font-rocgrotesk;
+}
+
+.font-nimbussanL{
+  font-family: $font-nimbussanL;
 }
 
 .no-gutter > [class*='col-'] {
@@ -126,6 +135,9 @@ img{
   }
 }
 
+.border-gray{
+  border-color: $light-gray;
+}
 
 /*------- Miscellaneous Classes -------*/
 
