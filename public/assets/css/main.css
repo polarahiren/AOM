@@ -16322,6 +16322,45 @@ body.login-page main {
   height: 182px;
 }
 
+.services-lists-group {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 150px;
+}
+@media (max-width: 767.98px) {
+  .services-lists-group {
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+}
+.services-lists-group .list-group-item {
+  border-color: #EDEDED;
+  border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  padding: 0px 45px 0px 0px;
+  background-color: transparent !important;
+  color: #000000;
+  transition: 0.2s all ease-in-out;
+}
+@media (min-width: 768px) {
+  .services-lists-group .list-group-item {
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 767.98px) {
+  .services-lists-group .list-group-item {
+    white-space: nowrap;
+  }
+}
+.services-lists-group .list-group-item:hover {
+  color: #06423F;
+}
+.services-lists-group .list-group-item.active {
+  border-width: 0px 0px 0px 2px;
+  padding-left: 15px;
+}
+
 body#tinymce {
   margin: 13px !important;
 }
