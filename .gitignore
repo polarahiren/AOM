@@ -1,0 +1,7 @@
+
+node_modules/.bin/**
+node_modules/**
+mix-manifest.json
+package-lock.json
+public/.DS_Store
+src/.DS_Store
