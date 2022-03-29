@@ -203,3 +203,34 @@ p.error-message {
         margin-left: 0;
     }
 }
+
+ul.list-style-dots{
+    &.primary-dots{
+        li{
+            &:before{
+                background-color: $primary;
+            }    
+        }
+    }
+    &.secondary-dots{
+        li{
+            &:before{
+                background-color: $secondary;
+            }    
+        }
+    }
+    li{
+        position: relative;
+        padding-left: 27px;
+        &:before{
+            content: "";
+            display: block;
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+    }
+}

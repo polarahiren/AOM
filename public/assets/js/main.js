@@ -11729,6 +11729,20 @@ var App = /*#__PURE__*/function () {
           }
         }]
       });
+      $('.accreditations-logo-carousel').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        autoplay: true,
+        slidesToShow: 3,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2
+          }
+        }]
+      });
       /* related products slider */
 
       $('.logos-slider').slick({
