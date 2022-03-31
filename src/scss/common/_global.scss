@@ -201,6 +201,9 @@ li{
   object-fit: cover;
   object-position: center;
 }
+.object-top{
+  object-position: top center;
+}
 
 .slick-overflow .slick-list{
   overflow: visible;

@@ -88,3 +88,44 @@ body.login-page{
         }
     }
 }
+
+
+//home page css
+.hero-section{
+    height: 100vh;
+
+    > div {
+        width: 50%;
+        @include media-breakpoint-down(md){
+            width: 100%;
+        }
+    }
+    .hero-content{
+        @include media-breakpoint-up(md){
+            position: absolute;
+        }
+        > div{
+            width: 100%;
+            @include media-breakpoint-up(md){
+                position: absolute;
+                width: 50%;
+            }
+        }
+
+        h1{
+            font-size: 86px;
+            @include media-breakpoint-down(md){
+                font-size: 46px;
+            }
+            
+            span{
+                border-bottom: 5px solid $warning;
+
+                @include media-breakpoint-down(md){
+                    border-bottom: 3px solid $warning;
+                }
+            }
+        }
+    }
+}
+// END home page css
