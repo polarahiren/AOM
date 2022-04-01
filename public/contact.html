@@ -16,11 +16,11 @@
 </head>
 
 
-<body data-bs-spy="scroll" data-bs-offset="200" data-bs-target="#list-example">
+<body class="bg-secondary">
     <!-- header -->
     <header class="position-fixed top-0 start-0 w-100">
         <!-- menu -->
-        <div class="py-4 py-lg-3 navbar bg-white">
+        <div class="py-4 py-lg-3 navbar bg-secondary">
             <div class="container">
                 <div class="col-12 col-lg-3 d-flex flex-wrap justify-content-between align-items-center">
 
@@ -865,91 +865,252 @@
         <!-- END menu -->
         <div class="menu-bg-overlay"></div>
     </header>
-    <div class="fake-header d-lg-none"></div>
+    <div class="fake-header"></div>
     <!-- END header -->
 
-    <main class="d-flex align-items-center justify-content-center">
+    <main class="">
 
-        <div class="py-md-5 container mt-md-5">
-            <div class="row">
-                <div class="col-12 col-md-4 mb-5 mb-md-0 pe-lg-5 service-menu">
-                    <div id="services-lists" class="privacy-policy-list services-lists-group d-flex flex-row flex-md-column overflow-scroll-hidden me-lg-5 bg-secondary">
-                        <a class="list-group-item text-white text-capitalize active" href="#about" data-scroll="true">More about me</a>
-                        <a class="list-group-item text-white text-capitalize" href="#credentials" data-scroll="true">Credentials</a>
-                        <a class="list-group-item text-white text-capitalize" href="#accreditations" data-scroll="true">Accreditations</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-7 pt-md-5">
-                    <div class="scrollspy-example text-primary text-sm leading-relax" data-bs-spy="scroll" data-bs-target="#services-lists" data-bs-offset="10" tabindex="0">
-
-                        <div id="about" data-scroll-offset="10">
-                            <div class="about text-start text-black-shade-2">
-                                <h1 class="text-3xl lg:text-7xl text-black-shade-2 mb-md-4 font-normal">More About Me</h1>
-                                <div class="normal-content bodyXS pt-2">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum euismod odio. Vitae convallis. Donec odio velit, ornare at nisi vel, ornare mattis lorem. Etiam volutpat, felis eu congue blandit, diam diam vestibulum lectus, accumsan aliquet nisl velit ut dui. Quisque non nunc vel lectus imperdiet scelerisque. Phasellus pulvinar vulputate metus, at molestie neque luctus eget. Morbi malesuada dolor at odio dignissim, vel tempus felis maximus. Duis ultricies massa nec augue hendrerit euismod. Aenean at feugiat nisl. Suspendisse sollicitudin dolor eu semper vulputate. Vivamus pulvinar ipsum consequat, aliquam ante non, ullamcorper elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum euismod odio vitae convallis. Donec odio velit, ornare at nisi vel, ornare mattis lorem. Etiam volutpat, felis eu congue blandit, diam diam vestibulum lectus, accumsan aliquet nisl velit ut dui. Quisque non nunc vel lectus</p>
+        <section class="login-section py-5 py-lg-0 overflow-hidden">
+            <div class="container p-0">
+                <div class="row justify-content-lg-end m-0 pt-xl-2">
+                    <div class="col-lg-12 col-xl-11 px-0 pt-xl-5">
+                        <div class="row align-items-center justify-content-lg-between m-0">
+                            <div class="col-md-12 col-lg-6 col-xl-5 ps-lg-0 pe-md-4 px-3">
+                                <div class="mb-4 pb-3 border-bottom border-gray">
+                                    <h2 class="text-9xl mb-3 font-medium font-rocgrotesk text-white">Let’s Chat</h2>
+                                    <p class="mb-0 opacity-50 font-medium normal-label font-rocgrotesk text-white opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum</p>
+                                </div>
+                                <div class="pt-2">
+                                    <form action="">
+                                        <div class="mb-4">
+                                            <label class="form-control-label text-black font-medium font-nimbussanL mb-1" for="email">Email Address*</label>
+                                            <input type="text" class="input-control gray-input-control w-100 mb-0" id="email" placeholder="Please Enter…">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label class="form-control-label text-black font-medium font-nimbussanL mb-1" for="password">Password*</label>
+                                            <input type="password" class="input-control gray-input-control w-100 mb-0" id="password" placeholder="Please Enter…">
+                                        </div>
+                                        <div class="d-lg-flex align-items-center mt-2 pt-1">
+                                            <button type="submit" class="btn btn-secondary me-4 flex-shrink-0">
+                                                <span class="pe-4">Sign Me In</span> 
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24.495" height="17.854" viewBox="0 0 24.495 17.854">
+                                                    <path id="Path_282" data-name="Path 282" d="M308.973,420.44c-.1-.011-.2-.023-.345-.044-.032,0-.067-.008-.143-.021a11.85,11.85,0,0,1-4.873-1.884,11.54,11.54,0,0,1-4.366-5.644l-.231-.673-1.364.46.233.665a12.815,12.815,0,0,0,4.906,6.343,13.033,13.033,0,0,0,1.214.728h-18.9v1.4h19a12.911,12.911,0,0,0-6.23,7.128l-.232.659,1.366.471.234-.664a11.5,11.5,0,0,1,4.367-5.647,11.964,11.964,0,0,1,5.043-1.916l.943-.1v-1.179Z" transform="translate(-285.107 -412.174)" fill="#fff"/>
+                                                </svg>
+                                            </button>
+                                            <a href="password-reset.html" class="d-block text-capitalize normal-label text-black opacity-25 font-medium ps-1 font-rocgrotesk text-decoration-none mt-3 mt-lg-0">Forgot Your Password? Reset Here</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 col-xl-5 mt-5 mt-lg-0 pt-5 pt-lg-0">
+                                <div class="d-flex align-items-center mt-2 mt-lg-0">
+                                    <div class="content-box register-box position-relative">
+                                        <img src="assets/images/icons/signin-arrow.svg" class="img-fluid position-absolute" alt="">
+                                        <h2 class="text-3xl md:text-7xl mb-3 font-semibold text-primary">Become A Member</h2>
+                                        <p class="normal-label text-black mb-4 opacity-50 font-medium mb-3">Gain Access To Exclusive Content & Features</p>
+                                        <a href="signup.html" class="btn btn-secondary me-4">
+                                            <span class="pe-4">Sign Me Up</span> 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24.495" height="17.854" viewBox="0 0 24.495 17.854">
+                                                <path id="Path_282" data-name="Path 282" d="M308.973,420.44c-.1-.011-.2-.023-.345-.044-.032,0-.067-.008-.143-.021a11.85,11.85,0,0,1-4.873-1.884,11.54,11.54,0,0,1-4.366-5.644l-.231-.673-1.364.46.233.665a12.815,12.815,0,0,0,4.906,6.343,13.033,13.033,0,0,0,1.214.728h-18.9v1.4h19a12.911,12.911,0,0,0-6.23,7.128l-.232.659,1.366.471.234-.664a11.5,11.5,0,0,1,4.367-5.647,11.964,11.964,0,0,1,5.043-1.916l.943-.1v-1.179Z" transform="translate(-285.107 -412.174)" fill="#fff"/>
+                                             </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-        
-                        <div class="py-md-5">
-                            <hr class="bg-secondary opacity-40 my-5">
-                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <div id="credentials" data-scroll-offset="0">
-                            <div class="col-12 text-start normal-content">
-                                <h2 class="text-3xl lg:text-7xl text-black-shade-2 mb-md-4 font-normal">Credentials</h2>
-                                <div class="normal-content bodyXS">
-                                    <ul class="list-style-dots secondary-dots p-0 m-0 pt-1">
-                                        <li class="mb-4">20 years of leadership, mentoring, and coaching experience in global universities, national FE providers and not for profit organizations</li>
-                                        <li class="mb-4">Qualified Coach, Neuro-Linguistic Programming (NLP) Practitioner and Coach (ABNLP)</li>
-                                        <li class="mb-4">Certified Practitioner of Time Line Therapy</li>
-                                        <li class="mb-4">Mental Health First Aider</li>
-                                        <li class="mb-4">Degree in Human Psychology</li>
-                                        <li>Member of the Association for Coaching</li>
+    </main>
+
+    <!-- Add to Basket Modal -->
+    <div class="slide-over info-modal product-details-modal product-cart-modal">
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close border-0 p-0 bg-transparent" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                            <g id="Group_1711" data-name="Group 1711" transform="translate(-277 -67)">
+                              <circle id="Ellipse_98" data-name="Ellipse 98" cx="26" cy="26" r="26" transform="translate(277 67)"/>
+                              <g id="Group_364" data-name="Group 364" transform="translate(292.063 82.063)">
+                                <g id="Rectangle_35" data-name="Rectangle 35" transform="translate(0 20.191) rotate(-45)" fill="#fff" stroke="#fff" stroke-width="1">
+                                  <rect width="28.554" height="2.38" stroke="none"/>
+                                  <rect x="0.5" y="0.5" width="27.554" height="1.38" fill="none"/>
+                                </g>
+                                <g id="Rectangle_36" data-name="Rectangle 36" transform="translate(20.191 21.874) rotate(-135)" fill="#fff" stroke="#fff" stroke-width="1">
+                                  <rect width="28.554" height="2.38" stroke="none"/>
+                                  <rect x="0.5" y="0.5" width="27.554" height="1.38" fill="none"/>
+                                </g>
+                              </g>
+                            </g>
+                        </svg>                              
+                    </button>
+                    <div class="modal-body p-0">
+                        <div class="d-flex justify-content-between flex-column h-100 flex-grow">
+                            <div class="modal-head">
+                                <h2 class="font-semibold font-poppins">Added Products <span class="text-gray"> [6]</span></h2>
+                                <div class="modal-cart-list pe-1">
+                                    <ul class="list-group mb-4">
+                                        <li>
+                                              <div class="d-flex align-items-center py-2 py-md-4 w-100 position-relative">
+                                                    <a href="single-product.html" class="cart-image me-4">
+                                                          <img src="assets/images/products/product-img1.png" class="object-cover">
+                                                    </a>
+                                                    <div class="flex-grow d-flex flex-column pl-3 pl-md-4 pr-5">
+                                                          <a href="single-product.html" class="text-sm text-black text-uppercase mb-3 mb-md-1 truncate truncate-1 font-red-hat font-medium">CANON LENS 35MM</a>
+                                                          <div class="d-flex text-sm text-black font-medium">Qty <span class="ps-2">1</span></div>
+                                                    </div>
+                                                    <a href="#" class="remove-icon position-absolute z-30 d-md-none">
+                                                        <svg id="Group_363" data-name="Group 363" xmlns="http://www.w3.org/2000/svg" width="15.966" height="15.966" viewBox="0 0 15.966 15.966">
+                                                            <g id="Rectangle_35" data-name="Rectangle 35" transform="translate(0 14.738) rotate(-45)" stroke="#000" stroke-width="1">
+                                                                <rect width="20.842" height="1.737" stroke="none"/>
+                                                                <rect x="0.5" y="0.5" width="19.842" height="0.737" fill="none"/>
+                                                            </g>
+                                                            <g id="Rectangle_36" data-name="Rectangle 36" transform="translate(14.738 15.966) rotate(-135)" stroke="#000" stroke-width="1">
+                                                                <rect width="20.842" height="1.737" stroke="none"/>
+                                                                <rect x="0.5" y="0.5" width="19.842" height="0.737" fill="none"/>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                              </div>
+                                        </li>
+                                        <li>
+                                              <div class="d-flex align-items-center py-2 py-md-4 w-100 position-relative">
+                                                    <a href="single-product.html" class="cart-image me-4">
+                                                          <img src="assets/images/products/product-img2.png" class="object-cover">
+                                                    </a>
+                                                    <div class="flex-grow d-flex flex-column pl-3 pl-md-4 pr-5">
+                                                          <a href="single-product.html" class="text-sm text-black text-uppercase mb-3 mb-md-1 truncate truncate-1 font-red-hat font-medium">CANON LENS 35MM</a>
+                                                          <div class="d-flex text-sm text-black font-medium">Qty <span class="ps-2">1</span></div>
+                                                    </div>
+                                                    <a href="#" class="remove-icon position-absolute z-30 d-md-none">
+                                                        <svg id="Group_363" data-name="Group 363" xmlns="http://www.w3.org/2000/svg" width="15.966" height="15.966" viewBox="0 0 15.966 15.966">
+                                                            <g id="Rectangle_35" data-name="Rectangle 35" transform="translate(0 14.738) rotate(-45)" stroke="#000" stroke-width="1">
+                                                                <rect width="20.842" height="1.737" stroke="none"/>
+                                                                <rect x="0.5" y="0.5" width="19.842" height="0.737" fill="none"/>
+                                                            </g>
+                                                            <g id="Rectangle_36" data-name="Rectangle 36" transform="translate(14.738 15.966) rotate(-135)" stroke="#000" stroke-width="1">
+                                                                <rect width="20.842" height="1.737" stroke="none"/>
+                                                                <rect x="0.5" y="0.5" width="19.842" height="0.737" fill="none"/>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                              </div>
+                                        </li>
+                                        <li>
+                                              <div class="d-flex align-items-center py-2 py-md-4 w-100 position-relative">
+                                                    <a href="single-product.html" class="cart-image me-4">
+                                                          <img src="assets/images/products/product-img3.png" class="object-cover">
+                                                    </a>
+                                                    <div class="flex-grow d-flex flex-column pl-3 pl-md-4 pr-5">
+                                                          <a href="single-product.html" class="text-sm text-black text-uppercase mb-3 mb-md-1 truncate truncate-1 font-red-hat font-medium">CANON LENS 35MM</a>
+                                                          <div class="d-flex text-sm text-black font-medium">Qty <span class="ps-2">1</span></div>
+                                                    </div>
+                                                    <a href="#" class="remove-icon position-absolute z-30 d-md-none">
+                                                        <svg id="Group_363" data-name="Group 363" xmlns="http://www.w3.org/2000/svg" width="15.966" height="15.966" viewBox="0 0 15.966 15.966">
+                                                            <g id="Rectangle_35" data-name="Rectangle 35" transform="translate(0 14.738) rotate(-45)" stroke="#000" stroke-width="1">
+                                                                <rect width="20.842" height="1.737" stroke="none"/>
+                                                                <rect x="0.5" y="0.5" width="19.842" height="0.737" fill="none"/>
+                                                            </g>
+                                                            <g id="Rectangle_36" data-name="Rectangle 36" transform="translate(14.738 15.966) rotate(-135)" stroke="#000" stroke-width="1">
+                                                                <rect width="20.842" height="1.737" stroke="none"/>
+                                                                <rect x="0.5" y="0.5" width="19.842" height="0.737" fill="none"/>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                              </div>
+                                        </li>
+                                        <li>
+                                              <div class="d-flex align-items-center py-2 py-md-4 w-100 position-relative">
+                                                    <a href="single-product.html" class="cart-image me-4">
+                                                          <img src="assets/images/products/product-img4.png" class="object-cover">
+                                                    </a>
+                                                    <div class="flex-grow d-flex flex-column pl-3 pl-md-4 pr-5">
+                                                          <a href="single-product.html" class="text-sm text-black text-uppercase mb-3 mb-md-1 truncate truncate-1 font-red-hat font-medium">CANON LENS 35MM</a>
+                                                          <div class="d-flex text-sm text-black font-medium">Qty <span class="ps-2">1</span></div>
+                                                    </div>
+                                                    <a href="#" class="remove-icon position-absolute z-30 d-md-none">
+                                                        <svg id="Group_363" data-name="Group 363" xmlns="http://www.w3.org/2000/svg" width="15.966" height="15.966" viewBox="0 0 15.966 15.966">
+                                                            <g id="Rectangle_35" data-name="Rectangle 35" transform="translate(0 14.738) rotate(-45)" stroke="#000" stroke-width="1">
+                                                                <rect width="20.842" height="1.737" stroke="none"/>
+                                                                <rect x="0.5" y="0.5" width="19.842" height="0.737" fill="none"/>
+                                                            </g>
+                                                            <g id="Rectangle_36" data-name="Rectangle 36" transform="translate(14.738 15.966) rotate(-135)" stroke="#000" stroke-width="1">
+                                                                <rect width="20.842" height="1.737" stroke="none"/>
+                                                                <rect x="0.5" y="0.5" width="19.842" height="0.737" fill="none"/>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                              </div>
+                                        </li>
+                                        <li>
+                                              <div class="d-flex align-items-center py-2 py-md-4 w-100 position-relative">
+                                                    <a href="single-product.html" class="cart-image me-4">
+                                                          <img src="assets/images/products/product-img1.png" class="object-cover">
+                                                    </a>
+                                                    <div class="flex-grow d-flex flex-column pl-3 pl-md-4 pr-5">
+                                                          <a href="single-product.html" class="text-sm text-black text-uppercase mb-3 mb-md-1 truncate truncate-1 font-red-hat font-medium">CANON LENS 35MM</a>
+                                                          <div class="d-flex text-sm text-black font-medium">Qty <span class="ps-2">1</span></div>
+                                                    </div>
+                                                    <a href="#" class="remove-icon position-absolute z-30 d-md-none">
+                                                        <svg id="Group_363" data-name="Group 363" xmlns="http://www.w3.org/2000/svg" width="15.966" height="15.966" viewBox="0 0 15.966 15.966">
+                                                            <g id="Rectangle_35" data-name="Rectangle 35" transform="translate(0 14.738) rotate(-45)" stroke="#000" stroke-width="1">
+                                                                <rect width="20.842" height="1.737" stroke="none"/>
+                                                                <rect x="0.5" y="0.5" width="19.842" height="0.737" fill="none"/>
+                                                            </g>
+                                                            <g id="Rectangle_36" data-name="Rectangle 36" transform="translate(14.738 15.966) rotate(-135)" stroke="#000" stroke-width="1">
+                                                                <rect width="20.842" height="1.737" stroke="none"/>
+                                                                <rect x="0.5" y="0.5" width="19.842" height="0.737" fill="none"/>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                              </div>
+                                        </li>
+                                        <li>
+                                              <div class="d-flex align-items-center py-2 py-md-4 w-100 position-relative">
+                                                    <a href="single-product.html" class="cart-image me-4">
+                                                          <img src="assets/images/products/product-img2.png" class="object-cover">
+                                                    </a>
+                                                    <div class="flex-grow d-flex flex-column pl-3 pl-md-4 pr-5">
+                                                          <a href="single-product.html" class="text-sm text-black text-uppercase mb-3 mb-md-1 truncate truncate-1 font-red-hat font-medium">CANON LENS 35MM</a>
+                                                          <div class="d-flex text-sm text-black font-medium">Qty <span class="ps-2">1</span></div>
+                                                    </div>
+                                                    <a href="#" class="remove-icon position-absolute z-30 d-md-none">
+                                                        <svg id="Group_363" data-name="Group 363" xmlns="http://www.w3.org/2000/svg" width="15.966" height="15.966" viewBox="0 0 15.966 15.966">
+                                                            <g id="Rectangle_35" data-name="Rectangle 35" transform="translate(0 14.738) rotate(-45)" stroke="#000" stroke-width="1">
+                                                                <rect width="20.842" height="1.737" stroke="none"/>
+                                                                <rect x="0.5" y="0.5" width="19.842" height="0.737" fill="none"/>
+                                                            </g>
+                                                            <g id="Rectangle_36" data-name="Rectangle 36" transform="translate(14.738 15.966) rotate(-135)" stroke="#000" stroke-width="1">
+                                                                <rect width="20.842" height="1.737" stroke="none"/>
+                                                                <rect x="0.5" y="0.5" width="19.842" height="0.737" fill="none"/>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                              </div>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="py-md-5">
-                            <hr class="bg-secondary opacity-40 my-5">
-                        </div>
-
-                        <div id="accreditations" data-scroll-offset="0">
-                            <div class="col-12 text-start normal-content pb-5 px-md-2 mb-lg-4">
-                                <h2 class="text-3xl lg:text-7xl text-black-shade-2 mb-md-4 font-normal">Accreditations</h2>
-                                <div class="accreditations-logo-carousel mb-4 mb-md-5 pb-2 pb-md-0">
-                                    <div class="logo-box pe-3">
-                                        <img src="assets/images/logos/logo.svg" class="img-fluid object-cover pe-3" />
-                                    </div>
-                                    <div class="logo-box pe-3">
-                                        <img src="assets/images/logos/logo.svg" class="img-fluid object-cover pe-3" />
-                                    </div>
-                                    <div class="logo-box pe-3">
-                                        <img src="assets/images/logos/logo.svg" class="img-fluid object-cover pe-3" />
-                                    </div>
-                                    <div class="logo-box pe-3">
-                                        <img src="assets/images/logos/logo.svg" class="img-fluid object-cover pe-3" />
-                                    </div>
-                                    <div class="logo-box pe-3">
-                                        <img src="assets/images/logos/logo.svg" class="img-fluid object-cover pe-3" />
-                                    </div>
+                            <div class="modal-foot">
+                                <div class="d-flex justify-content-between align-items-center font-medium text-uppercase text-sm tracking-">
+                                    <span>Subtotal</span>
+                                    <span>£1,500.00</span>
                                 </div>
-                                <a href="signup.html" class="btn btn-primary">
-                                    <span class="pe-4">Get In Touch</span> 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24.495" height="17.854" viewBox="0 0 24.495 17.854">
-                                        <path id="Path_282" data-name="Path 282" d="M308.973,420.44c-.1-.011-.2-.023-.345-.044-.032,0-.067-.008-.143-.021a11.85,11.85,0,0,1-4.873-1.884,11.54,11.54,0,0,1-4.366-5.644l-.231-.673-1.364.46.233.665a12.815,12.815,0,0,0,4.906,6.343,13.033,13.033,0,0,0,1.214.728h-18.9v1.4h19a12.911,12.911,0,0,0-6.23,7.128l-.232.659,1.366.471.234-.664a11.5,11.5,0,0,1,4.367-5.647,11.964,11.964,0,0,1,5.043-1.916l.943-.1v-1.179Z" transform="translate(-285.107 -412.174)" fill="#fff"></path>
-                                     </svg>
-                                </a>
+                                <div class="mt-3">
+                                    <a href="cart.html" class="btn btn-outline-primary w-100 mb-3">VIEW / EDIT BAG</a>
+                                    <a href="cart.html" class="btn btn-primary w-100">continue to checkout</a>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-
-    </main>
+    </div>
+    <!-- Add to Basket Modal -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

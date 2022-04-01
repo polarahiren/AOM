@@ -28,6 +28,17 @@ body.login-page{
 }
 
 // Credentials Page
+.service-menu {
+    @include media-breakpoint-down(md){
+        position: -webkit-sticky;
+        position: sticky;
+        top: 80px;
+        left: 0;
+        background: $white;
+        z-index: 99;
+    }
+}
+
 .services-lists-group {
     position: sticky;
     top: 150px;
@@ -129,3 +140,4 @@ body.login-page{
     }
 }
 // END home page css
+

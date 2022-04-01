@@ -17,3 +17,18 @@
         border-color: $primary;
     }
 }
+
+.search-form{
+    .input-group-append {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        button{
+            width: 40px;
+            height: 40px;
+            background-color: $secondary;
+            border-radius: 6px;
+        }
+    }
+}

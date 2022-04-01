@@ -12,8 +12,57 @@
 
 @font-face {
   font-family: 'RocGrotesk';
-  src: url('../fonts/RocGrotesk.ttf') format('truetype');
-  font-weight: normal;
+  src: url('../fonts/Roc-Grotesk-Thin.otf') format('OpenType');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RocGrotesk';
+  src: url('../fonts/Roc-Grotesk-Light.otf') format('OpenType');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RocGrotesk';
+  src: url('../fonts/Roc-Grotesk-Regular.otf') format('OpenType');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RocGrotesk';
+  src: url('../fonts/Roc-Grotesk-Medium.otf') format('OpenType');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RocGrotesk';
+  src: url('../fonts/Roc-Grotesk-Bold.otf') format('OpenType');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RocGrotesk';
+  src: url('../fonts/Roc-Grotesk-ExtraBold.otf') format('OpenType');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RocGrotesk';
+  src: url('../fonts/Roc-Grotesk-Black.otf') format('OpenType');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RocGrotesk';
+  src: url('../fonts/Roc-Grotesk-Heavy.otf') format('OpenType');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
