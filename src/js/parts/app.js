@@ -70,7 +70,7 @@ export class App{
   });
 
   $('.insta_slider').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,

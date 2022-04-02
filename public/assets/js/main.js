@@ -11771,7 +11771,7 @@ var App = /*#__PURE__*/function () {
         }]
       });
       $('.insta_slider').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 5,
         slidesToScroll: 1,
         arrows: false,
