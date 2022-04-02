@@ -15101,6 +15101,10 @@ ul.list-style-dots li:before {
   font-size: 60px;
 }
 
+.text-10xl {
+  font-size: 70px;
+}
+
 .text-large {
   font-size: 120px;
   line-height: 162px;
@@ -15157,6 +15161,10 @@ ul.list-style-dots li:before {
 
   .sm\:text-9xl {
     font-size: 60px;
+  }
+
+  .sm\:text-10xl {
+    font-size: 70px;
   }
 
   .sm\:text-large {
@@ -15216,6 +15224,10 @@ ul.list-style-dots li:before {
     font-size: 60px;
   }
 
+  .md\:text-10xl {
+    font-size: 70px;
+  }
+
   .md\:text-large {
     font-size: 120px;
   }
@@ -15271,6 +15283,10 @@ ul.list-style-dots li:before {
 
   .lg\:text-9xl {
     font-size: 60px;
+  }
+
+  .lg\:text-10xl {
+    font-size: 70px;
   }
 
   .lg\:text-large {
@@ -15330,6 +15346,10 @@ ul.list-style-dots li:before {
     font-size: 60px;
   }
 
+  .xl\:text-10xl {
+    font-size: 70px;
+  }
+
   .xl\:text-large {
     font-size: 120px;
   }
@@ -15385,6 +15405,10 @@ ul.list-style-dots li:before {
 
   .xxl\:text-9xl {
     font-size: 60px;
+  }
+
+  .xxl\:text-10xl {
+    font-size: 70px;
   }
 
   .xxl\:text-large {
@@ -15512,6 +15536,16 @@ ul.list-style-dots li:before {
 .input-control:hover, .input-control:focus {
   border-color: #06423F;
 }
+.input-control.light-input {
+  padding: 18px 22px;
+  border-radius: 5px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.36);
+  color: #ffffff;
+}
+.input-control.light-input::Placeholder {
+  color: #ffffff;
+}
 
 .search-form .input-group-append {
   position: absolute;
@@ -15524,6 +15558,126 @@ ul.list-style-dots li:before {
   height: 40px;
   background-color: #FD7F6B;
   border-radius: 6px;
+}
+
+.select2-container .select2-selection {
+  border: 1px solid rgba(6, 66, 63, 0.46);
+  height: auto;
+}
+.select2-container .select2-selection #select2--container {
+  line-height: normal;
+  color: #000000;
+  padding: 13px 18px;
+}
+.select2-container .select2-selection .select2-selection__arrow {
+  height: 100%;
+  right: 15px;
+}
+
+.light-input ~ .select2-container .select2-selection {
+  border: 0;
+  background: rgba(255, 255, 255, 0.36);
+}
+.light-input ~ .select2-container .select2-selection #select2--container {
+  color: #ffffff;
+  padding: 19px 22px;
+  line-height: 16px;
+}
+
+.select2-dropdown {
+  background-color: rgba(255, 255, 255, 0.36);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-color: #06423F;
+}
+.select2-dropdown .select2-results__option {
+  padding: 10px 16px;
+  font-size: 16px;
+}
+.select2-dropdown .select2-results__option.select2-results__option--highlighted {
+  background-color: #06423F;
+}
+
+.checkbox-control .theme-checkbox {
+  width: 17px;
+  height: 17px;
+  border-radius: 5px;
+  border: 1px solid #707070;
+  background: #ffffff;
+  position: relative;
+}
+.checkbox-control .theme-checkbox::before {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 11px;
+  border-radius: 3px;
+  background: #000000;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 1;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.2s all ease-in-out;
+}
+.checkbox-control.checkbox-large .theme-checkbox {
+  width: 30px;
+  height: 30px;
+}
+.checkbox-control.checkbox-large .theme-checkbox::before {
+  width: 22px;
+  height: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+.checkbox-control.checkbox-large input:checked + .theme-checkbox:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+.checkbox-control.checkbox-light .theme-checkbox {
+  border-color: #ffffff;
+  background: transparent;
+}
+.checkbox-control.checkbox-light .theme-checkbox::before {
+  background: #ffffff;
+}
+.checkbox-control input {
+  display: none;
+}
+.checkbox-control input:checked + .theme-checkbox:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.radio-control .theme-radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #ffffff;
+  position: relative;
+}
+.radio-control .theme-radio::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  background: #F58220;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.2s all ease-in-out;
+}
+.radio-control input {
+  display: none;
+}
+.radio-control input:checked + .theme-radio:before {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .card-hover img {

@@ -16,6 +16,16 @@
     &:focus{
         border-color: $primary;
     }
+    &.light-input {
+        padding: 18px 22px;
+        border-radius: 5px;
+        border: 0;
+        background: rgba($white, $alpha: .36);
+        color: $white;
+        &::Placeholder{
+            color: $white;
+        }
+    }
 }
 
 .search-form{
@@ -32,3 +42,146 @@
         }
     }
 }
+
+.select2-container{
+    .select2-selection{
+        border: 1px solid rgba(6, 66, 63, 0.46);
+        height: auto;
+        #select2--container{
+            line-height: normal;
+            color: $black;
+            padding: 13px 18px;
+        }
+        .select2-selection__arrow{
+            height: 100%;
+            right: 15px;
+        }
+    }
+}
+
+.light-input{
+    ~ .select2-container{
+        .select2-selection{
+            border: 0;
+            background: rgba($white, $alpha: .36);
+            #select2--container{
+                color: $white;
+                padding: 19px 22px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+.select2-dropdown{
+    background-color: rgba($white, $alpha: .36);
+    backdrop-filter: blur(10px);
+    border-color: $primary;
+    .select2-results__option{
+        padding: 10px 16px;
+        font-size: $bodyM;
+        &.select2-results__option--highlighted{
+            background-color: $primary;
+        }
+    }
+}
+
+// Checkbox Control
+.checkbox-control{
+    .theme-checkbox {
+        width: 17px;
+        height: 17px;
+        border-radius: 5px;
+        border: 1px solid #707070;
+        background: $white;
+        position: relative;
+
+        &::before{
+            content:"";
+            display: block;
+            width: 11px;
+            height: 11px;
+            border-radius: 3px;
+            background: $black;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            z-index: 1;
+            opacity: 0;
+            transform: scale(0);
+            transition: 0.2s all ease-in-out;
+        }
+    }
+    &.checkbox-large{
+        .theme-checkbox{
+            width: 30px;
+            height: 30px;
+            &::before{
+                width: 22px;
+                height: 22px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) scale(0);
+            }
+        }
+        & input:checked + .theme-checkbox:before{
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+    &.checkbox-light{
+        .theme-checkbox{
+            border-color: $white;
+            background: transparent;
+            &::before{
+                background: $white;
+            }
+        }
+    }
+
+    input{
+        display: none;
+
+        &:checked + .theme-checkbox:before {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+// Checkbox Control
+
+// Radio Control
+.radio-control{
+    .theme-radio {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: $white;
+        position: relative;
+
+        &::before{
+            content:"";
+            display: block;
+            width: 14px;
+            height: 14px;
+            border-radius: 100%;
+            background: #F58220;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            z-index: 1;
+            opacity: 0;
+            transform: scale(0);
+            transition: 0.2s all ease-in-out;
+        }
+    }
+
+    input{
+        display: none;
+
+        &:checked + .theme-radio:before {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+// Radio Control

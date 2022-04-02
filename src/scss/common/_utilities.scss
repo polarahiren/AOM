@@ -76,6 +76,9 @@
 .text-9xl{
     font-size: $text-9xl;
 }
+.text-10xl{
+    font-size: $text-10xl;
+}
 .text-large{
     font-size: $text-large;
     line-height: 162px;
@@ -95,6 +98,7 @@
     .sm\:text-7xl{font-size: $text-7xl;}
     .sm\:text-8xl{font-size: $text-8xl;}
     .sm\:text-9xl{font-size: $text-9xl;}
+    .sm\:text-10xl{font-size: $text-10xl;}
     .sm\:text-large{font-size: $text-large;}
 }
 
@@ -112,6 +116,7 @@
     .md\:text-7xl{font-size: $text-7xl;}
     .md\:text-8xl{font-size: $text-8xl;}
     .md\:text-9xl{font-size: $text-9xl;}
+    .md\:text-10xl{font-size: $text-10xl;}
     .md\:text-large{font-size: $text-large;}
 }
 
@@ -129,6 +134,7 @@
     .lg\:text-7xl{font-size: $text-7xl;}
     .lg\:text-8xl{font-size: $text-8xl;}
     .lg\:text-9xl{font-size: $text-9xl;}
+    .lg\:text-10xl{font-size: $text-10xl;}
     .lg\:text-large{font-size: $text-large;}
 }
 
@@ -146,6 +152,7 @@
     .xl\:text-7xl{font-size: $text-7xl;}
     .xl\:text-8xl{font-size: $text-8xl;}
     .xl\:text-9xl{font-size: $text-9xl;}
+    .xl\:text-10xl{font-size: $text-10xl;}
     .xl\:text-large{font-size: $text-large;}
 }
 
@@ -163,6 +170,7 @@
     .xxl\:text-7xl{font-size: $text-7xl;}
     .xxl\:text-8xl{font-size: $text-8xl;}
     .xxl\:text-9xl{font-size: $text-9xl;}
+    .xxl\:text-10xl{font-size: $text-10xl;}
     .xxl\:text-large{font-size: $text-large;}
 }
 

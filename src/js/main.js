@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import '@popperjs/core';
 import 'bootstrap/dist/js/bootstrap';
-
+import 'select2/dist/js/select2.min.js';
 import {App} from './parts/app.js'
 import {Plugins} from './parts/plugins.js'
 import {Parts} from './parts/parts.js'
@@ -38,13 +38,14 @@ $(function () {
 // Select2 JS
 $(document).ready(function() {
     $('.select-dropdown').select2();
-    $('.product-option, .select-light > .select-dropdown').select2({
+    $('.product-option, .disable-search').select2({
             minimumResultsForSearch: -1
     });
 });
 
 // fancy box
 require('@fancyapps/ui/src/Fancybox/Fancybox');
+
 
 // ===========================================================================
 
