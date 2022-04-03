@@ -15428,6 +15428,14 @@ ul.list-style-dots li:before {
   color: #06423F;
 }
 
+.bg-primary-light {
+  background-color: #52A3A3;
+}
+
+.text-primary-light {
+  color: #52A3A3;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -15998,6 +16006,69 @@ ul.list-style-dots li:before {
 }
 
 /* END checkout modal */
+.modal .modal-dialog.modal-lg {
+  max-width: 1000px;
+}
+@media (max-width: 767.98px) {
+  .modal .modal-dialog {
+    width: 100%;
+    margin: 0px 0px auto auto;
+    height: 100vh;
+  }
+}
+@media (min-width: 1024px) {
+  .modal .modal-dialog {
+    max-width: 974px;
+  }
+}
+.modal .modal-content {
+  border-radius: 17px;
+}
+@media (max-width: 767.98px) {
+  .modal .modal-content {
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+  }
+}
+.modal .modal-close {
+  width: 47px;
+  height: 47px;
+  border-radius: 100%;
+  position: absolute;
+  top: 8px;
+  right: 11px;
+  opacity: 1;
+  z-index: 9;
+  /* Safari 4+ */
+  /* Fx 5+ */
+  /* Opera 12+ */
+  transition: all 500ms ease;
+  /* IE 10+, Fx 29+ */
+}
+@media (max-width: 575.98px) {
+  .modal .modal-close {
+    width: 53px;
+    height: 53px;
+    top: 54px;
+    right: 37px;
+  }
+}
+.modal .modal-close:hover {
+  transform: rotate(90deg);
+}
+@media (max-width: 767.98px) {
+  .modal .normal-content {
+    letter-spacing: -0.16pt;
+    line-height: 26px;
+  }
+}
+@media (max-width: 767.98px) {
+  .modal .modal-title {
+    line-height: 44px;
+  }
+}
+
 .slick-slider:not(.slick-initialized) .slick-track {
   display: flex;
 }

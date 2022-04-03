@@ -971,8 +971,8 @@
                                             <label for="newsletter" class="cursor-pointer font-normal text-white text-base normal-label"> Click Here To Sign Up To Newsletter</label>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-center">
-                                            <button type="submit" class="btn btn-secondary bg-warning me-4 flex-shrink-0">
-                                                <span class="pe-4">Sign Me In</span> 
+                                            <button class="btn btn-secondary bg-warning me-4 flex-shrink-0" type="button" data-bs-toggle="modal" data-bs-target="#infoModal">
+                                                <span class="pe-4">Submit Form</span> 
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24.495" height="17.854" viewBox="0 0 24.495 17.854">
                                                     <path id="Path_282" data-name="Path 282" d="M308.973,420.44c-.1-.011-.2-.023-.345-.044-.032,0-.067-.008-.143-.021a11.85,11.85,0,0,1-4.873-1.884,11.54,11.54,0,0,1-4.366-5.644l-.231-.673-1.364.46.233.665a12.815,12.815,0,0,0,4.906,6.343,13.033,13.033,0,0,0,1.214.728h-18.9v1.4h19a12.911,12.911,0,0,0-6.23,7.128l-.232.659,1.366.471.234-.664a11.5,11.5,0,0,1,4.367-5.647,11.964,11.964,0,0,1,5.043-1.916l.943-.1v-1.179Z" transform="translate(-285.107 -412.174)" fill="#fff"/>
                                                 </svg>
@@ -988,6 +988,37 @@
         </section>
 
     </main>
+
+    <!-- Modal -->
+    <div class="large-modal">
+        <div class="modal fade" id="infoModal" aria-hidden="true" aria-labelledby="infoModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content bg-primary-light">
+                    <button type="button" class="modal-close bg-secondary border-0 p-0" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+                            <g id="Group_931" data-name="Group 931" transform="translate(-1148 -140)">
+                              <g id="Group_364" data-name="Group 364" transform="translate(1164 156)">
+                                <rect id="Rectangle_35" data-name="Rectangle 35" width="20.27" height="1.689" transform="translate(0 14.333) rotate(-45)" fill="#fff"/>
+                                <rect id="Rectangle_36" data-name="Rectangle 36" width="20.27" height="1.689" transform="translate(14.333 15.528) rotate(-135)" fill="#fff"/>
+                              </g>
+                            </g>
+                        </svg>
+                    </button>
+                    <div class="modal-body py-5 my-3 text-center d-flex flex-column justify-content-center align-items-center">
+                        <h2 class="modal-title text-8xl text-white fw-light mb-3">Thanks For Your Enquiry</h2>
+                        <p class="text-base md:text-lg text-white normal-content fw-light mb-4 mb-md-3">We aim to be in touch within 24 hours, but sometimes it can take up to 48 hours.</p>
+                        <a href="signup.html" class="btn btn-primary" data-bs-dismiss="modal">
+                            <span class="pe-4">Close</span> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24.495" height="17.854" viewBox="0 0 24.495 17.854">
+                                <path id="Path_282" data-name="Path 282" d="M308.973,420.44c-.1-.011-.2-.023-.345-.044-.032,0-.067-.008-.143-.021a11.85,11.85,0,0,1-4.873-1.884,11.54,11.54,0,0,1-4.366-5.644l-.231-.673-1.364.46.233.665a12.815,12.815,0,0,0,4.906,6.343,13.033,13.033,0,0,0,1.214.728h-18.9v1.4h19a12.911,12.911,0,0,0-6.23,7.128l-.232.659,1.366.471.234-.664a11.5,11.5,0,0,1,4.367-5.647,11.964,11.964,0,0,1,5.043-1.916l.943-.1v-1.179Z" transform="translate(-285.107 -412.174)" fill="#fff"/>
+                             </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
 
     <!-- Footer -->
     <footer class="position-relative z-50">
