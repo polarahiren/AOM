@@ -15007,7 +15007,7 @@ ul.list-style-dots li:before {
 .small-label {
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: -0.12px;
 }
 
 .normal-label {
@@ -15092,7 +15092,7 @@ ul.list-style-dots li:before {
 }
 
 .text-8xl {
-  font-size: 54px;
+  font-size: 50px;
   line-height: 72px;
   letter-spacing: 0.66px;
 }
@@ -15156,7 +15156,7 @@ ul.list-style-dots li:before {
   }
 
   .sm\:text-8xl {
-    font-size: 54px;
+    font-size: 50px;
   }
 
   .sm\:text-9xl {
@@ -15217,7 +15217,7 @@ ul.list-style-dots li:before {
   }
 
   .md\:text-8xl {
-    font-size: 54px;
+    font-size: 50px;
   }
 
   .md\:text-9xl {
@@ -15278,7 +15278,7 @@ ul.list-style-dots li:before {
   }
 
   .lg\:text-8xl {
-    font-size: 54px;
+    font-size: 50px;
   }
 
   .lg\:text-9xl {
@@ -15339,7 +15339,7 @@ ul.list-style-dots li:before {
   }
 
   .xl\:text-8xl {
-    font-size: 54px;
+    font-size: 50px;
   }
 
   .xl\:text-9xl {
@@ -15400,7 +15400,7 @@ ul.list-style-dots li:before {
   }
 
   .xxl\:text-8xl {
-    font-size: 54px;
+    font-size: 50px;
   }
 
   .xxl\:text-9xl {
@@ -15560,6 +15560,9 @@ ul.list-style-dots li:before {
   border-radius: 6px;
 }
 
+.select2-container {
+  width: 100%;
+}
 .select2-container .select2-selection {
   border: 1px solid rgba(6, 66, 63, 0.46);
   height: auto;
@@ -16786,6 +16789,29 @@ body.login-page main {
 @media (max-width: 767.98px) {
   .hero-section .hero-content h1 span, .hero-section .hero-content .h1 span {
     border-bottom: 3px solid #F5B01C;
+  }
+}
+
+.login-section {
+  padding-bottom: 224px;
+  background-image: url(../images/general/signup-arrow.svg);
+  background-position-x: -10px;
+  background-position-y: 450px;
+  background-repeat: no-repeat;
+  background-size: 570px;
+}
+@media (max-width: 1023.98px) {
+  .login-section {
+    background-position-x: -10px;
+    background-position-y: bottom;
+    background-size: 460px;
+  }
+}
+@media (max-width: 575.98px) {
+  .login-section {
+    background-position-x: -100px;
+    background-position-y: bottom;
+    background-size: 386px;
   }
 }
 

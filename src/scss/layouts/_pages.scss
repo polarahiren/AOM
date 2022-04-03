@@ -141,3 +141,22 @@ body.login-page{
 }
 // END home page css
 
+// Login Page
+.login-section{
+    padding-bottom: 224px;
+    background-image: url(../images/general/signup-arrow.svg);
+    background-position-x: -10px;
+    background-position-y: 450px;
+    background-repeat: no-repeat;
+    background-size: 570px;
+    @include media-breakpoint-down(lg){
+        background-position-x: -10px;
+        background-position-y: bottom;
+        background-size: 460px;
+    }
+    @include media-breakpoint-down(sm){
+        background-position-x: -100px;
+        background-position-y: bottom;
+        background-size: 386px;
+    }
+}
