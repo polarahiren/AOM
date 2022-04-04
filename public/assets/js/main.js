@@ -11802,6 +11802,18 @@ var App = /*#__PURE__*/function () {
           }
         }]
       });
+      $('.testimonial-carousel').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        autoplay: true,
+        slidesToShow: 1,
+        responsive: [{
+          breakpoint: 768,
+          settings: {}
+        }]
+      });
     }
   }, {
     key: "slickSLider",

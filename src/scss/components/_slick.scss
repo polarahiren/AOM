@@ -69,6 +69,42 @@
     }
 }
 
+.slick-horizontal-dots{
+    ul.slick-dots{
+        width: auto;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: row;
+        z-index: 99;
+        li{
+            margin: 0px 4px;
+            width: auto;
+            height: auto;
+            position: relative;
+            display: inline-block;
+            padding: 0;
+            cursor: pointer;
+            &.slick-active{
+                button{
+                  width: 46px;
+                  opacity: 1;
+              }
+            }
+            button{
+              padding: 0px;
+              width: 26px;
+              height: 2px;
+              background-color: $black;
+              opacity: 1;
+              transition: 0.2s all ease-in-out;
+              margin: 0 auto;
+            }
+        }
+    }
+}
+
 .slider-with-inner-body {
     .card-with-inner-body {
         position: relative;
@@ -296,6 +332,26 @@
         @include media-breakpoint-down(md) {
             max-width: 70px;
             max-height: 50px;
+        }
+    }
+}
+
+.slick-primary-dots{
+    ul.slick-dots{
+        li{
+            button{
+                background-color: $primary;
+            }
+        }
+    }
+}
+
+.slick-secondary-dots{
+    ul.slick-dots{
+        li{
+            button{
+                background-color: $secondary;
+            }
         }
     }
 }

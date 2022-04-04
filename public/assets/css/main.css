@@ -14777,6 +14777,10 @@ li {
   overflow: visible;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 p.error-message {
   margin-top: 5px;
   color: #ff0000;
@@ -14989,6 +14993,10 @@ ul.list-style-dots li:before {
   left: 0;
 }
 
+.theme-radius-15 {
+  border-radius: 15px;
+}
+
 /*******************************************************************************
 ******************************* COLOUR VARIABLES *******************************
 *******************************************************************************/
@@ -15087,7 +15095,7 @@ ul.list-style-dots li:before {
 }
 
 .text-7xl {
-  font-size: 42px;
+  font-size: 40px;
   line-height: 57px;
 }
 
@@ -15152,7 +15160,7 @@ ul.list-style-dots li:before {
   }
 
   .sm\:text-7xl {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .sm\:text-8xl {
@@ -15213,7 +15221,7 @@ ul.list-style-dots li:before {
   }
 
   .md\:text-7xl {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .md\:text-8xl {
@@ -15274,7 +15282,7 @@ ul.list-style-dots li:before {
   }
 
   .lg\:text-7xl {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .lg\:text-8xl {
@@ -15335,7 +15343,7 @@ ul.list-style-dots li:before {
   }
 
   .xl\:text-7xl {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .xl\:text-8xl {
@@ -15396,7 +15404,7 @@ ul.list-style-dots li:before {
   }
 
   .xxl\:text-7xl {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .xxl\:text-8xl {
@@ -15646,6 +15654,10 @@ ul.list-style-dots li:before {
 .checkbox-control.checkbox-large input:checked + .theme-checkbox:before {
   transform: translate(-50%, -50%) scale(1);
 }
+.checkbox-control.checkbox-large input {
+  width: 30px;
+  height: 30px;
+}
 .checkbox-control.checkbox-light .theme-checkbox {
   border-color: #ffffff;
   background: transparent;
@@ -15654,7 +15666,12 @@ ul.list-style-dots li:before {
   background: #ffffff;
 }
 .checkbox-control input {
-  display: none;
+  position: absolute;
+  z-index: 9;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  opacity: 0;
 }
 .checkbox-control input:checked + .theme-checkbox:before {
   transform: scale(1);
@@ -16130,6 +16147,38 @@ ul.list-style-dots li:before {
   right: 30px;
 }
 
+.slick-horizontal-dots ul.slick-dots {
+  width: auto;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  z-index: 99;
+}
+.slick-horizontal-dots ul.slick-dots li {
+  margin: 0px 4px;
+  width: auto;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-horizontal-dots ul.slick-dots li.slick-active button {
+  width: 46px;
+  opacity: 1;
+}
+.slick-horizontal-dots ul.slick-dots li button {
+  padding: 0px;
+  width: 26px;
+  height: 2px;
+  background-color: #000000;
+  opacity: 1;
+  transition: 0.2s all ease-in-out;
+  margin: 0 auto;
+}
+
 .slider-with-inner-body .card-with-inner-body {
   position: relative;
 }
@@ -16335,6 +16384,14 @@ ul.list-style-dots li:before {
     max-width: 70px;
     max-height: 50px;
   }
+}
+
+.slick-primary-dots ul.slick-dots li button {
+  background-color: #06423F;
+}
+
+.slick-secondary-dots ul.slick-dots li button {
+  background-color: #FD7F6B;
 }
 
 header {
@@ -16765,6 +16822,7 @@ body.login-page main {
   top: 150px;
   padding: 48px 36px;
   border-radius: 30px;
+  z-index: 9;
 }
 @media (max-width: 767.98px) {
   .services-lists-group {
@@ -16884,6 +16942,24 @@ body.login-page main {
     background-position-y: bottom;
     background-size: 386px;
   }
+}
+
+.service-title {
+  padding-bottom: 15px;
+  margin-bottom: 28px;
+  border-bottom: 3px solid;
+  line-height: 62px;
+}
+
+.service-testimonial:before {
+  content: "";
+  display: block;
+  width: 1000%;
+  height: 100%;
+  background: #F5B01C;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
 }
 
 body#tinymce {

@@ -128,6 +128,10 @@
         & input:checked + .theme-checkbox:before{
             transform: translate(-50%, -50%) scale(1);
         }
+        input{
+            width: 30px;
+            height: 30px;
+        }
     }
     &.checkbox-light{
         .theme-checkbox{
@@ -140,7 +144,12 @@
     }
 
     input{
-        display: none;
+        position: absolute;
+        z-index: 9;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+        opacity: 0;
 
         &:checked + .theme-checkbox:before {
             transform: scale(1);
