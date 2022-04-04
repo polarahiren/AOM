@@ -15569,6 +15569,7 @@ button,
   background-image: url("../images/icons/btn-arrow.svg");
   background-repeat: no-repeat;
   background-position: center right 18px;
+  text-align: left;
 }
 .btn-with-arrow:hover {
   background-position: center right 10px;
@@ -17007,6 +17008,12 @@ body.login-page main {
     margin: auto;
   }
 }
+@media (max-width: 767.98px) {
+  .hero-section .hero-content {
+    padding-top: 150px;
+    overflow: hidden;
+  }
+}
 @media (min-width: 768px) {
   .hero-section .hero-content {
     width: 50%;
@@ -17016,7 +17023,13 @@ body.login-page main {
   font-size: 86px;
   line-height: 87px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 1199.98px) {
+  .hero-section .hero-content h1, .hero-section .hero-content .h1 {
+    font-size: 55px;
+    line-height: 65px;
+  }
+}
+@media (max-width: 1023.98px) {
   .hero-section .hero-content h1, .hero-section .hero-content .h1 {
     font-size: 46px;
     line-height: 54px;
@@ -17031,10 +17044,56 @@ body.login-page main {
     border-bottom: 3px solid #F5B01C;
   }
 }
+.hero-section .hero-content .btn {
+  min-width: 190px;
+}
 .hero-section .hero-content svg {
   position: absolute;
   right: 50px;
-  bottom: -50%;
+  bottom: 0%;
+  transform: translateY(60%);
+}
+@media (max-width: 1199.98px) {
+  .hero-section .hero-content svg {
+    overflow: hidden;
+    width: 140px;
+    transform: translateY(0%) translateX(30px) rotate(-45deg);
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-section .hero-content svg {
+    right: 0px;
+  }
+}
+
+.about-us-section:before {
+  content: "";
+  background-image: url("../images/background-images/about-us-bg-shap.svg");
+  width: 50%;
+  height: 800px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateY(-26%);
+  background-position: center left;
+}
+@media (min-width: 768px) {
+  .about-us-section:before {
+    height: 1000px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-us-section:before {
+    width: 40%;
+  }
+}
+@media (min-width: 1400px) {
+  .about-us-section:before {
+    width: 30%;
+  }
 }
 
 .login-section {

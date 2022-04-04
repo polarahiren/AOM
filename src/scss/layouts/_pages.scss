@@ -123,6 +123,11 @@ body.login-page{
     }
 
     .hero-content{
+        @include media-breakpoint-down(md){
+            padding-top: 150px;
+            overflow: hidden;
+        }
+
         @include media-breakpoint-up(md){
             width: 50%;
         }
@@ -130,8 +135,13 @@ body.login-page{
         h1{
             font-size: 86px;
             line-height: 87px;
+            
+            @include media-breakpoint-down(xl){
+                font-size: 55px;
+                line-height: 65px;
+            }
 
-            @include media-breakpoint-down(md){
+            @include media-breakpoint-down(lg){
                 font-size: 46px;
                 line-height: 54px;
             }
@@ -146,14 +156,54 @@ body.login-page{
             }
         }
 
+        .btn{
+            min-width: 190px;
+        }
+
         svg{
             position: absolute;
             right: 50px;
-            bottom: -50%;
+            bottom: 0%;
+            transform: translateY(60%);
+            @include media-breakpoint-down(xl){
+                overflow: hidden;
+                width: 140px;
+                transform: translateY(0%) translateX(30px) rotate(-45deg);
+            }
+            @include media-breakpoint-down(md){
+                right: 0px;
+            }
         }
 
     }
 }
+
+.about-us-section:before {
+    content: "";
+    background-image: url("../images/background-images/about-us-bg-shap.svg");
+    width: 50%;
+    height: 800px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(-26%);
+    background-position: center left;
+    
+    @include media-breakpoint-up(md){
+        height: 1000px;
+    }
+
+    @include media-breakpoint-up(xl){
+        width: 40%;
+    }
+    @include media-breakpoint-up(xxl){
+        width: 30%;
+    }
+}
+
 // END home page css
 
 // Login Page
