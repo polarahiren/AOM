@@ -260,6 +260,39 @@ body.login-page{
         }
     }
 }
+
+.member-area-section{
+    h2{
+        line-height: 70px;
+        border-bottom: 5px solid $warning;
+        display: inline-block;
+
+        @include media-breakpoint-up(md) {
+            span{
+                font-weight: 400;
+            }
+        }
+    }
+
+    .btn{
+        min-width: 226px;
+    }
+
+    svg {
+        position: absolute;
+        right: -70px;
+        top: -60px;
+        transform: rotate(-140deg) translateX(100%);
+        width: 150px;
+
+        @include media-breakpoint-up(md) {
+            transform: rotate(-120deg) translateX(100%);
+            right: -200px;
+            top: 40px;
+            width: 210px;
+        }
+    }
+}
 // END home page css
 
 // Login Page
