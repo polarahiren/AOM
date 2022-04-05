@@ -43,3 +43,10 @@ button,
     border-radius: 40px;
     background-color: #FD7F6B;
 }
+
+
+.btn-white-outline{
+    background-color: transparent;
+    border-color: $white;
+    color: $white;
+}
