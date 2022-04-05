@@ -247,6 +247,16 @@ body.login-page{
     }
 }
 
+
+.blog-card-section{
+    background: -webkit-linear-gradient(bottom, rgba(82,163,163,1) 0%,rgba(82,163,163,1) 50%,rgba(253,127,107,1) 50%,rgba(253,127,107,1) 100%); /* Chrome10-25,Safari5.1-6 */
+
+    .card-customized{
+        @include media-breakpoint-up(lg) {
+            width: 39%;
+        }
+    }
+}
 // END home page css
 
 // Login Page

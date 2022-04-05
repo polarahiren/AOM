@@ -127,6 +127,24 @@ export class App{
       ]
   });
 
+  // the blog slider for home page
+  $('.the-blog-slider').slick({
+      dots: false,
+      arrows: false,
+      infinite: false,
+      speed: 300,
+      autoplay: false,
+      slidesToShow: 2,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+              slidesToShow: 1,
+          }
+        }
+      ]
+  });
+
   }
 
   slickSLider (){

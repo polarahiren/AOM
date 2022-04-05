@@ -23,6 +23,10 @@
         top: 0;
         left: 0;
         z-index: 1;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
     }
 
     &:hover .btn-with-icon{
@@ -45,5 +49,45 @@
         height: auto;
         text-align: center;
         z-index: 9;
+    }
+}
+
+.card-with-inner-body{
+    .card-img{
+        height: 330px;
+        @include media-breakpoint-down(lg) {
+            height: 310px;
+        }
+    }
+
+    .body-card{
+        top: auto;
+        bottom: 0px;
+        transform: none;
+        padding: 30px;
+        @include media-breakpoint-down(md) {    
+            padding: 24px;
+        }
+
+        h3{
+            font-size: 25px;
+            letter-spacing: -0.25px;
+        }
+    }
+
+
+    &:before{
+        @include media-breakpoint-down(md) {    
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: block;
+            background: -webkit-linear-gradient(bottom, rgba(0,0,0,1) 6%,rgba(0,0,0,0.80) 24%,rgba(0,0,0,0) 88%,rgba(0,0,0,0.1) 100%); /* Chrome10-25,Safari5.1-6 */
+            opacity: 1;
+            top: auto;
+            left: 0;
+            z-index: 1;
+            bottom: 0px;
+        }
     }
 }
