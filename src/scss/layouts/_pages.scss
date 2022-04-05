@@ -204,6 +204,10 @@ body.login-page{
     }
 }
 
+.section-card-block{
+    background: -webkit-linear-gradient(top, rgba(82,163,163,1) 0%,rgba(82,163,163,1) 50%,rgba(253,127,107,1) 50%,rgba(253,127,107,1) 100%); /* Chrome10-25,Safari5.1-6 */
+}
+
 // END home page css
 
 // Login Page

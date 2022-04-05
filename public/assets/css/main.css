@@ -14386,7 +14386,7 @@ body, html {
   font-family: "roc-grotesk", sans-serif;
 }
 
-a:hover {
+a, a:hover {
   text-decoration: none;
 }
 
@@ -15575,6 +15575,15 @@ button,
   background-position: center right 10px;
 }
 
+.btn-with-icon {
+  width: 46px;
+  height: 46px;
+  border: none;
+  transition: 0.4s all ease-in-out;
+  border-radius: 40px;
+  background-color: #FD7F6B;
+}
+
 .form-control-label {
   font-size: 14px;
   letter-spacing: -0.14px;
@@ -15768,138 +15777,38 @@ button,
   transform: scale(1.1);
 }
 
-/* card-with-inner-body */
-.card-with-inner-body {
-  position: relative;
-}
-.card-with-inner-body .card-body {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  z-index: 10;
+.theme-card::before {
+  content: "";
   width: 100%;
-  padding: 30px;
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 26%, rgba(0, 0, 0, 0.6) 99%, rgba(0, 0, 0, 0.6) 100%);
-  color: #ffffff;
+  height: 100%;
+  position: absolute;
+  display: block;
+  background: #000000;
+  opacity: 0.29;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.theme-card:hover .btn-with-icon {
+  background-color: #52A3A3;
+}
+.theme-card .card-img {
+  height: 390px;
 }
 @media (max-width: 1023.98px) {
-  .card-with-inner-body .card-body {
-    padding: 20px;
-  }
-}
-.card-with-inner-body .card-body .card-title {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-@media (max-width: 767.98px) {
-  .card-with-inner-body .card-body .card-title {
-    margin-bottom: 15px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .story-card {
-    margin-bottom: -20px;
-  }
-}
-.story-card .card-img {
-  height: 300px;
-  overflow: hidden;
-  border-radius: 0px;
-}
-@media (min-width: 768px) {
-  .story-card .card-img {
-    height: 350px;
-  }
-}
-@media (min-width: 1024px) {
-  .story-card .card-img {
-    height: 450px;
-  }
-}
-@media (min-width: 768px) {
-  .story-card .story-body {
-    padding-left: 20px;
-    padding-right: 20px;
-    box-shadow: 0 0 36px rgba(113, 113, 113, 0.1);
-  }
-}
-@media (min-width: 1024px) {
-  .story-card .story-body {
-    padding-left: 35px;
-    padding-right: 35px;
-    transform: translateY(-100px);
-  }
-}
-.story-card .story-body h3, .story-card .story-body .h3 {
-  font-weight: normal;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
-}
-.story-card .story-body a {
-  font-size: 16px;
-}
-
-.insight-img,
-.product-card-img {
-  height: 400px;
-  overflow: hidden;
-}
-@media (max-width: 1023.98px) {
-  .insight-img,
-.product-card-img {
+  .theme-card .card-img {
     height: 300px;
   }
 }
-
-/* insights card */
-.insights-body h3, .insights-body .h3 {
-  font-size: 22px;
-}
-@media (max-width: 1023.98px) {
-  .insights-body h3, .insights-body .h3 {
-    font-size: 18px;
-  }
-}
-.insights-body .read-more {
-  font-size: 16px;
-  text-decoration: underline;
-}
-
-/* END insights card */
-/* card-with-inner-body */
-.card-with-inner-body {
-  position: relative;
-}
-.card-with-inner-body .card-body {
+.theme-card .body-card {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
-  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
   width: 100%;
-  padding: 30px;
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 26%, rgba(0, 0, 0, 0.6) 99%, rgba(0, 0, 0, 0.6) 100%);
-  color: #ffffff;
-}
-@media (max-width: 1023.98px) {
-  .card-with-inner-body .card-body {
-    padding: 20px;
-  }
-}
-.card-with-inner-body .card-body .card-title {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-@media (max-width: 767.98px) {
-  .card-with-inner-body .card-body .card-title {
-    margin-bottom: 15px;
-  }
+  height: auto;
+  text-align: center;
+  z-index: 9;
 }
 
 .info-modal .modal .modal-dialog {
@@ -17094,6 +17003,11 @@ body.login-page main {
   .about-us-section:before {
     width: 30%;
   }
+}
+
+.section-card-block {
+  background: -webkit-linear-gradient(top, #52a3a3 0%, #52a3a3 50%, #fd7f6b 50%, #fd7f6b 100%);
+  /* Chrome10-25,Safari5.1-6 */
 }
 
 .login-section {
