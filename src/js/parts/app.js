@@ -106,13 +106,7 @@ export class App{
       speed: 300,
       autoplay: true,
       slidesToShow: 1,
-      responsive: [
-          {
-              breakpoint: 768,
-              settings: {
-              }
-          }
-      ]
+      adaptiveHeight: true,
   });
 
   $('.service-slider').slick({
