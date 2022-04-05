@@ -11809,10 +11809,7 @@ var App = /*#__PURE__*/function () {
         speed: 300,
         autoplay: true,
         slidesToShow: 1,
-        responsive: [{
-          breakpoint: 768,
-          settings: {}
-        }]
+        adaptiveHeight: true
       });
       $('.service-slider').slick({
         dots: false,

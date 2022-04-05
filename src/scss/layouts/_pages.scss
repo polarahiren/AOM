@@ -332,3 +332,38 @@ body.login-page{
     }
 }
 
+// Blog Open
+.back-all-button {
+    @include media-breakpoint-up(lg){
+        position: sticky;
+        top: 110px;
+        left: 0;
+        margin-bottom: 30px;
+    }
+}
+.social-icons {
+    @include media-breakpoint-up(lg){
+        position: sticky;
+        top: calc(100% - 100px);
+        left: 0;
+    }
+    > .text-sm{
+        letter-spacing: -0.14px;
+    }
+    ul{
+        white-space: nowrap;
+        li{
+            display: inline-block;
+            a{
+                width: 40px;
+                height: 40px;
+                background: $primary-light;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.5s;
+            }
+        }
+    }
+}
