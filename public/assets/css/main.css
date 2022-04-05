@@ -15584,6 +15584,12 @@ button,
   background-color: #FD7F6B;
 }
 
+.btn-white-outline {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
 .form-control-label {
   font-size: 14px;
   letter-spacing: -0.14px;
@@ -16915,6 +16921,35 @@ body.login-page main {
 @media (min-width: 1024px) {
   .blog-card-section .card-customized {
     width: 39%;
+  }
+}
+
+.member-area-section h2, .member-area-section .h2 {
+  line-height: 70px;
+  border-bottom: 5px solid #F5B01C;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .member-area-section h2 span, .member-area-section .h2 span {
+    font-weight: 400;
+  }
+}
+.member-area-section .btn {
+  min-width: 226px;
+}
+.member-area-section svg {
+  position: absolute;
+  right: -70px;
+  top: -60px;
+  transform: rotate(-140deg) translateX(100%);
+  width: 150px;
+}
+@media (min-width: 768px) {
+  .member-area-section svg {
+    transform: rotate(-120deg) translateX(100%);
+    right: -200px;
+    top: 40px;
+    width: 210px;
   }
 }
 
