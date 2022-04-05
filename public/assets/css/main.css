@@ -16920,7 +16920,6 @@ body.login-page main {
     position: sticky;
     top: 80px;
     left: 0;
-    background: #ffffff;
     z-index: 99;
   }
 }
@@ -17072,6 +17071,20 @@ body.login-page main {
   }
 }
 
+@media (max-width: 767.98px) {
+  .service-image img {
+    height: 271px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .service-testimonial {
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .service-testimonial:before {
   content: "";
   display: block;
@@ -17081,6 +17094,31 @@ body.login-page main {
   position: absolute;
   top: 0;
   transform: translateX(-50%);
+}
+@media (max-width: 767.98px) {
+  .service-testimonial:before {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .scrollspy-example .service-image {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .scrollspy-example .service-image img {
+    border-radius: 0;
+  }
+  .scrollspy-example .service-slider {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .scrollspy-example .service-slider img {
+    height: 271px;
+  }
+  .scrollspy-example .service-slider .slick-arrow {
+    display: none !important;
+  }
 }
 
 body#tinymce {

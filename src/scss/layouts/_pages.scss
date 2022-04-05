@@ -34,7 +34,7 @@ body.login-page{
         position: sticky;
         top: 80px;
         left: 0;
-        background: $white;
+        // background: $white;
         z-index: 99;
     }
 }
@@ -176,6 +176,7 @@ body.login-page{
     }
 }
 
+// Service Section
 .service-title {
     padding-bottom: 15px;
     margin-bottom: 28px;
@@ -185,7 +186,22 @@ body.login-page{
         line-height: 43px;
     }
 }
+
+.service-image{
+    img{
+        @include media-breakpoint-down(md){
+            height: 271px;
+        }
+    }
+}
+
 .service-testimonial{
+    @include media-breakpoint-down(md){
+        margin-left: -12px;
+        margin-right: -12px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     &:before {
         content: "";
         display: block;
@@ -195,5 +211,31 @@ body.login-page{
         position: absolute;
         top: 0;
         transform: translateX(-50%);
+        @include media-breakpoint-down(md){
+            width: 100%;
+        }
     }
 }
+
+.scrollspy-example{
+    @include media-breakpoint-down(md){
+        .service-image{
+            margin-left: -12px;
+            margin-right: -12px;
+            img{
+                border-radius: 0;
+            }
+        }
+        .service-slider{
+            margin-left: -12px;
+            margin-right: -12px;
+            img{
+                height: 271px;
+            }
+            .slick-arrow{
+                display: none !important;
+            }
+        }
+    }
+}
+

@@ -11824,7 +11824,8 @@ var App = /*#__PURE__*/function () {
         responsive: [{
           breakpoint: 768,
           settings: {
-            arrows: false
+            arrows: false,
+            dots: false
           }
         }]
       });

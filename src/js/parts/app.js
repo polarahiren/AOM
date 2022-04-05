@@ -127,7 +127,8 @@ export class App{
           breakpoint: 768,
           settings: {
               arrows: false,
-              }
+              dots: false,
+            }
           }
       ]
   });
