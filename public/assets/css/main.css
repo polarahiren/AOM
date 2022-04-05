@@ -16898,8 +16898,10 @@ body.login-page main {
   height: 101px;
 }
 
-.hero-section {
-  height: 100vh;
+@media (min-width: 768px) {
+  .hero-section {
+    height: 100vh;
+  }
 }
 .hero-section > div {
   width: 100%;
@@ -16907,6 +16909,11 @@ body.login-page main {
 @media (min-width: 768px) {
   .hero-section > div {
     width: 50%;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-section .hero-banner {
+    height: 485px;
   }
 }
 @media (min-width: 768px) {
@@ -16919,7 +16926,7 @@ body.login-page main {
 }
 @media (max-width: 767.98px) {
   .hero-section .hero-content {
-    padding-top: 150px;
+    padding-top: 120px;
     overflow: hidden;
   }
 }
@@ -16975,11 +16982,14 @@ body.login-page main {
   }
 }
 
+.about-us-section {
+  padding-bottom: 150px;
+}
 .about-us-section:before {
   content: "";
   background-image: url("../images/background-images/about-us-bg-shap.svg");
   width: 50%;
-  height: 800px;
+  height: 400px;
   display: block;
   position: absolute;
   right: 0;
@@ -16988,6 +16998,14 @@ body.login-page main {
   background-size: cover;
   transform: translateY(-26%);
   background-position: center left;
+}
+@media (max-width: 767.98px) {
+  .about-us-section:before {
+    top: auto;
+    bottom: 0px;
+    transform: translateY(200px);
+    background-position: center left -20px;
+  }
 }
 @media (min-width: 768px) {
   .about-us-section:before {
