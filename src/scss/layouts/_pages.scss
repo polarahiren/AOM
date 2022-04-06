@@ -416,6 +416,25 @@ body.login-page{
 }
 
 // blog page
+.blog-hero-section{
+    h2{
+        line-height: 37px;
+        @include media-breakpoint-up(lg){
+            line-height: 55px;
+        }
+    }
+    .btn{
+        min-width: 190px;
+    }
+ 
+    p{
+        @include media-breakpoint-down(md){
+            -webkit-line-clamp: 3;
+        }
+    }
+}
+
+
 .newslatter-section{
     h2{
         font-size: 28px;
@@ -467,3 +486,4 @@ body.login-page{
     }
 }
 // END blog page
+
