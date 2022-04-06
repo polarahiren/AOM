@@ -470,27 +470,30 @@ body.login-page{
                 line-height: 29px;
             }
         }
+        .img-fluid{
+            height: 699px;
+            @include media-breakpoint-down(md){
+                height: 316px;
+            }
+        }
     }
-    .img-fluid{
-        height: 699px;
-        @include media-breakpoint-down(md){
-            height: 316px;
+}
 // blog page
-    h2{
-        line-height: 37px;
-        @include media-breakpoint-up(lg){
-            line-height: 55px;
-        }
+h2{
+    line-height: 37px;
+    @include media-breakpoint-up(lg){
+        line-height: 55px;
     }
-    .btn{
-        min-width: 190px;
+}
+.btn{
+    min-width: 190px;
+}
+
+p{
+    @include media-breakpoint-down(md){
+        -webkit-line-clamp: 3;
     }
- 
-    p{
-        @include media-breakpoint-down(md){
-            -webkit-line-clamp: 3;
-        }
-    }
+}
 
 .mermbers-grid{
     @include media-breakpoint-up(md){
@@ -527,6 +530,7 @@ body.login-page{
         }
     }
 }
+
 .newslatter-box{
     width: 100%;
 
@@ -542,7 +546,6 @@ body.login-page{
         font-size: 16px;
         letter-spacing: -0.16px;
         border: none;
-
         &::placeholder{
             color: #00000035;
         }
@@ -560,7 +563,6 @@ body.login-page{
         background-color: $secondary;
         border: none; 
         transition: 0.4s all ease-in-out;
-
         &:hover{
             background-color: $info;
         }
