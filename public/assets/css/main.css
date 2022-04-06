@@ -14952,7 +14952,6 @@ p.error-message {
   width: 100%;
   font-size: 14px;
   line-height: 1.8;
-  box-shadow: 0 0 36px rgba(113, 113, 113, 0.1);
   z-index: 10;
 }
 @media (min-width: 768px) {
@@ -17151,6 +17150,16 @@ body.login-page main {
   }
 }
 
+.member-area-hero-section {
+  padding-top: 200px;
+  padding-bottom: 80px;
+}
+@media (max-width: 767.98px) {
+  .member-area-hero-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
 @media (max-width: 767.98px) {
   .member-area-hero-section .container {
     width: 100%;
@@ -17160,17 +17169,13 @@ body.login-page main {
 }
 .member-area-hero-section .hero-filter {
   padding: 63px 68px 58px 90px;
-  position: absolute;
-  top: 201px;
-  z-index: 9;
   border-radius: 30px;
+  z-index: 9;
 }
 @media (max-width: 767.98px) {
   .member-area-hero-section .hero-filter {
     padding: 54px 36px 66px;
     border-radius: 0;
-    position: relative;
-    top: auto;
   }
 }
 .member-area-hero-section .hero-filter .hero-title {
@@ -17187,11 +17192,17 @@ body.login-page main {
     line-height: 29px;
   }
 }
-.member-area-hero-section .hero-filter .img-fluid {
-  height: 699px;
+.member-area-hero-section .member-area-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 @media (max-width: 767.98px) {
-  .member-area-hero-section .hero-filter .img-fluid {
+  .member-area-hero-section .member-area-banner {
+    position: relative;
     height: 316px;
   }
 }
@@ -17212,6 +17223,14 @@ h2, .h2 {
 @media (max-width: 767.98px) {
   p {
     -webkit-line-clamp: 3;
+  }
+  p .img-fluid {
+    height: 699px;
+  }
+}
+@media (max-width: 767.98px) and (max-width: 767.98px) {
+  p .img-fluid {
+    height: 316px;
   }
 }
 
@@ -17284,6 +17303,23 @@ h2, .h2 {
 }
 .newslatter-box .newslatter-submit:hover {
   background-color: #52A3A3;
+}
+
+.blog-hero-section h2, .blog-hero-section .h2 {
+  line-height: 37px;
+}
+@media (min-width: 1024px) {
+  .blog-hero-section h2, .blog-hero-section .h2 {
+    line-height: 55px;
+  }
+}
+.blog-hero-section .btn {
+  min-width: 190px;
+}
+@media (max-width: 767.98px) {
+  .blog-hero-section p {
+    -webkit-line-clamp: 3;
+  }
 }
 
 body#tinymce {
