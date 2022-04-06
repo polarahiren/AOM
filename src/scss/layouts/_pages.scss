@@ -475,22 +475,9 @@ body.login-page{
         height: 699px;
         @include media-breakpoint-down(md){
             height: 316px;
-// blog page
-    h2{
-        line-height: 37px;
-        @include media-breakpoint-up(lg){
-            line-height: 55px;
         }
     }
-    .btn{
-        min-width: 190px;
-    }
- 
-    p{
-        @include media-breakpoint-down(md){
-            -webkit-line-clamp: 3;
-        }
-    }
+}
 
 .mermbers-grid{
     @include media-breakpoint-up(md){
@@ -516,6 +503,7 @@ body.login-page{
     }
 }
 
+// newslatter section
 .newslatter-section{
     h2{
         font-size: 28px;
@@ -566,4 +554,26 @@ body.login-page{
         }
     }
 }
+// newslatter section
+
+
+// blog page
+.blog-hero-section{
+    h2{
+        line-height: 37px;
+        @include media-breakpoint-up(lg){
+            line-height: 55px;
+        }
+    }
+    .btn{
+        min-width: 190px;
+    }
+ 
+    p{
+        @include media-breakpoint-down(md){
+            -webkit-line-clamp: 3;
+        }
+    }
+}
+
 // END blog page
