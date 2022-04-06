@@ -437,3 +437,69 @@ body.login-page{
         line-height: 36px;
     }
 }
+
+// Member Area
+.member-area-hero-section{
+    .container{
+        @include media-breakpoint-down(md){
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+    .hero-filter{
+        padding: 63px 68px 58px 90px;
+        position: absolute;
+        top: 201px;
+        z-index: 9;
+        border-radius: 30px;
+        @include media-breakpoint-down(md){
+            padding: 54px 36px 66px;
+            border-radius: 0;
+            position: relative;
+            top: auto;
+        }
+        .hero-title{
+            line-height: 68px;
+            @include media-breakpoint-down(md){
+                line-height: 52px;
+            }
+        }
+        .hero-content{
+            @include media-breakpoint-down(md){
+                letter-spacing: -0.16px;
+                line-height: 29px;
+            }
+        }
+    }
+    .img-fluid{
+        height: 699px;
+        @include media-breakpoint-down(md){
+            height: 316px;
+        }
+    }
+}
+
+.mermbers-grid{
+    @include media-breakpoint-up(md){
+        margin-left: -8px;
+        margin-right: -8px;
+        > .col-12{
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+}
+
+.members-section{
+    .blog-card{
+        .btn-with-icon{
+            background: $warning;
+        }   
+        &:hover{
+            .btn-with-icon{
+                background: $primary;
+            }
+        }    
+    }
+}

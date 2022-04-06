@@ -15861,6 +15861,30 @@ button,
   }
 }
 
+.blog-card .card-img {
+  height: 310px;
+}
+@media (max-width: 767.98px) {
+  .blog-card .card-img {
+    height: 220px;
+  }
+}
+.blog-card .body-card h3, .blog-card .body-card .h3 {
+  font-size: 23px;
+  line-height: 30px;
+  letter-spacing: -0.23px;
+}
+@media (max-width: 767.98px) {
+  .blog-card .body-card h3, .blog-card .body-card .h3 {
+    font-size: 25px;
+    line-height: 33px;
+    letter-spacing: -0.25px;
+  }
+}
+.blog-card:hover .btn-with-icon {
+  background-color: #52A3A3;
+}
+
 .info-modal .modal .modal-dialog {
   margin: 0px 0px auto auto;
   height: 100vh;
@@ -16888,6 +16912,7 @@ body.login-page main {
 @media (min-width: 1400px) {
   .about-us-section:before {
     width: 30%;
+    max-width: 630px;
   }
 }
 
@@ -17097,6 +17122,69 @@ body.login-page main {
   .blog-helpe-title {
     line-height: 36px;
   }
+}
+
+@media (max-width: 767.98px) {
+  .member-area-hero-section .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+}
+.member-area-hero-section .hero-filter {
+  padding: 63px 68px 58px 90px;
+  position: absolute;
+  top: 201px;
+  z-index: 9;
+  border-radius: 30px;
+}
+@media (max-width: 767.98px) {
+  .member-area-hero-section .hero-filter {
+    padding: 54px 36px 66px;
+    border-radius: 0;
+    position: relative;
+    top: auto;
+  }
+}
+.member-area-hero-section .hero-filter .hero-title {
+  line-height: 68px;
+}
+@media (max-width: 767.98px) {
+  .member-area-hero-section .hero-filter .hero-title {
+    line-height: 52px;
+  }
+}
+@media (max-width: 767.98px) {
+  .member-area-hero-section .hero-filter .hero-content {
+    letter-spacing: -0.16px;
+    line-height: 29px;
+  }
+}
+.member-area-hero-section .img-fluid {
+  height: 699px;
+}
+@media (max-width: 767.98px) {
+  .member-area-hero-section .img-fluid {
+    height: 316px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mermbers-grid {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .mermbers-grid > .col-12 {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.members-section .blog-card .btn-with-icon {
+  background: #F5B01C;
+}
+.members-section .blog-card:hover .btn-with-icon {
+  background: #06423F;
 }
 
 body#tinymce {
