@@ -439,6 +439,12 @@ body.login-page{
 
 // Member Area
 .member-area-hero-section{
+    padding-top: 200px;
+    padding-bottom: 80px;
+    @include media-breakpoint-down(md){
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
     .container{
         @include media-breakpoint-down(md){
             width: 100%;
@@ -448,15 +454,11 @@ body.login-page{
     }
     .hero-filter{
         padding: 63px 68px 58px 90px;
-        position: absolute;
-        top: 201px;
-        z-index: 9;
         border-radius: 30px;
+        z-index: 9;
         @include media-breakpoint-down(md){
             padding: 54px 36px 66px;
             border-radius: 0;
-            position: relative;
-            top: auto;
         }
         .hero-title{
             line-height: 68px;
@@ -470,11 +472,17 @@ body.login-page{
                 line-height: 29px;
             }
         }
-        .img-fluid{
-            height: 699px;
-            @include media-breakpoint-down(md){
-                height: 316px;
-            }
+    }
+    .member-area-banner{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        @include media-breakpoint-down(md){
+            position: relative;
+            height: 316px;
         }
     }
 }
@@ -492,6 +500,12 @@ h2{
 p{
     @include media-breakpoint-down(md){
         -webkit-line-clamp: 3;
+        .img-fluid{
+            height: 699px;
+            @include media-breakpoint-down(md){
+                height: 316px;
+            }
+        }
     }
 }
 
@@ -519,6 +533,7 @@ p{
     }
 }
 
+// newslatter section
 .newslatter-section{
     h2{
         font-size: 28px;
@@ -568,4 +583,26 @@ p{
         }
     }
 }
+// newslatter section
+
+
+// blog page
+.blog-hero-section{
+    h2{
+        line-height: 37px;
+        @include media-breakpoint-up(lg){
+            line-height: 55px;
+        }
+    }
+    .btn{
+        min-width: 190px;
+    }
+ 
+    p{
+        @include media-breakpoint-down(md){
+            -webkit-line-clamp: 3;
+        }
+    }
+}
+
 // END blog page
