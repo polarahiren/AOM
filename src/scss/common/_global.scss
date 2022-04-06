@@ -210,3 +210,11 @@ li{
 .overflow-x-hidden{
   overflow-x: hidden;
 }
+
+.overflow-scroll-hidden{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -415,7 +415,6 @@ body.login-page{
     }
 }
 
-// Single Blog
 .single-blog-title{
     @include media-breakpoint-down(md){
         font-size: 46px;
@@ -476,9 +475,22 @@ body.login-page{
         height: 699px;
         @include media-breakpoint-down(md){
             height: 316px;
+// blog page
+    h2{
+        line-height: 37px;
+        @include media-breakpoint-up(lg){
+            line-height: 55px;
         }
     }
-}
+    .btn{
+        min-width: 190px;
+    }
+ 
+    p{
+        @include media-breakpoint-down(md){
+            -webkit-line-clamp: 3;
+        }
+    }
 
 .mermbers-grid{
     @include media-breakpoint-up(md){
@@ -503,3 +515,55 @@ body.login-page{
         }    
     }
 }
+
+.newslatter-section{
+    h2{
+        font-size: 28px;
+        letter-spacing: -0.28pt;
+        line-height: 30px;
+
+        span{
+            font-weight: 500;
+        }
+    }
+}
+.newslatter-box{
+    width: 100%;
+
+    @include media-breakpoint-up(md){
+        max-width: 440px;
+    }
+
+    .newslatter-input{
+        height: 48px;
+        width: 100%;
+        border-radius: 6px;
+        padding: 14px 50px 14px 16px;
+        font-size: 16px;
+        letter-spacing: -0.16px;
+        border: none;
+
+        &::placeholder{
+            color: #00000035;
+        }
+    }
+    .newslatter-submit{
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+        position: absolute;
+        right: 5px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        z-index: 9;
+        background-color: $secondary;
+        border: none; 
+        transition: 0.4s all ease-in-out;
+
+        &:hover{
+            background-color: $info;
+        }
+    }
+}
+// END blog page

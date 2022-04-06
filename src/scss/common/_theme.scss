@@ -166,7 +166,7 @@ p.error-message {
 /* END story section */
 
 .box-large-image {
-    width: 55%;
+    width: 50%;
     @include media-breakpoint-down(md) {
         width: 100%;
         position: relative !important;
@@ -238,4 +238,24 @@ ul.list-style-dots{
 // Border Radius
 .theme-radius-15{
     border-radius: 15px;
+}
+
+
+.filter-tab-btn{
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: 14px;
+    padding: 10px 14px;
+    color: $primary;
+    background-color: $white;
+    display: block;
+    transition: 0.4s all ease-in-out;
+    border-radius: 20px;
+    white-space: nowrap;
+
+    &.active{
+        background-color: $secondary;
+        color: $white;
+        padding: 10px 27px;
+    }
 }
