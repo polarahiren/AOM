@@ -413,3 +413,26 @@ body.login-page{
         }
     }
 }
+
+// Single Blog
+.single-blog-title{
+    @include media-breakpoint-down(md){
+        font-size: 46px;
+        line-height: 48px;
+    }
+}
+
+.service-slider{
+    @include media-breakpoint-down(md){
+        margin-left: -12px;
+        margin-right: -12px;
+        img{
+            border-radius: 0;
+        }
+    }
+}
+.blog-helpe-title{
+    @include media-breakpoint-down(md){
+        line-height: 36px;
+    }
+}

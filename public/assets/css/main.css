@@ -17076,6 +17076,29 @@ body.login-page main {
   transition: all 0.5s;
 }
 
+@media (max-width: 767.98px) {
+  .single-blog-title {
+    font-size: 46px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .service-slider {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .service-slider img {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .blog-helpe-title {
+    line-height: 36px;
+  }
+}
+
 body#tinymce {
   margin: 13px !important;
 }
