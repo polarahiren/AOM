@@ -883,23 +883,23 @@
         </div>
 
         <div class="container py-5">
-            <div class="d-flex justify-content-between pb-5">
-                <h2 class="text-capitalize text-26 md:text-5xl mb-0">our blog</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-between pb-5">
+                <h2 class="text-capitalize text-26 md:text-5xl mb-4 pb-1 mb-md-0 pb-md-0">our blog</h2>
 
-                <div class="d-flex align-items-center text-sm text-primary">
-                    <span class="text-sm text-primary text-opacity-50 d-block">Filter by:</span>
-                    <ul class="d-flex align-items-center m-0 ps-2">
-                        <li><a href="javascript:void(0);" class="filter-btn">View All</a></li>
-                        <li><a href="javascript:void(0);" class="filter-btn">Tutoring</a></li>
-                        <li><a href="javascript:void(0);" class="filter-btn">Career</a></li>
-                        <li><a href="javascript:void(0);" class="filter-btn">Community</a></li>
+                <div class="d-flex align-items-center text-sm text-primary overflow-auto overflow-scroll-hidden">
+                    <span class="text-sm text-primary text-opacity-50 d-block flex-shrink-0">Filter by:</span>
+                    <ul class="filter-tab-nav d-flex align-items-center m-0 ps-2">
+                        <li><a href="javascript:void(0);" class="flex-shrink-0 filter-tab-btn active" data-filter="all">View All</a></li>
+                        <li><a href="javascript:void(0);" class="flex-shrink-0 filter-tab-btn" data-filter="tutoring">Tutoring</a></li>
+                        <li><a href="javascript:void(0);" class="flex-shrink-0 filter-tab-btn" data-filter="career">Career</a></li>
+                        <li><a href="javascript:void(0);" class="flex-shrink-0 filter-tab-btn" data-filter="community">Community</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="row">
                 <!-- blog card -->
-                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4">
+                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4 filter tutoring">
                     <a href="javascript:void(0);" class="blog-card d-block card-hover mb-md-3">
                         <div class="card-img overflow-hidden theme-radius-15">
                             <img src="assets/images/card-images/card-img-1.png" alt="card image" class="h-100 w-100 object-cover" />
@@ -919,7 +919,7 @@
                 <!-- END blog card -->
 
                 <!-- blog card -->
-                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4">
+                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4 filter career community">
                     <a href="javascript:void(0);" class="blog-card d-block card-hover mb-md-3">
                         <div class="card-img overflow-hidden theme-radius-15">
                             <img src="assets/images/card-images/card-img-2.png" alt="card image" class="h-100 w-100 object-cover" />
@@ -939,7 +939,7 @@
                 <!-- END blog card -->
 
                 <!-- blog card -->
-                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4">
+                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4 filter tutoring community">
                     <a href="javascript:void(0);" class="blog-card d-block card-hover mb-md-3">
                         <div class="card-img overflow-hidden theme-radius-15">
                             <img src="assets/images/card-images/card-img-4.png" alt="card image" class="h-100 w-100 object-cover" />
@@ -959,7 +959,7 @@
                 <!-- END blog card -->
 
                 <!-- blog card -->
-                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4">
+                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4 filter career">
                     <a href="javascript:void(0);" class="blog-card d-block card-hover mb-md-3">
                         <div class="card-img overflow-hidden theme-radius-15">
                             <img src="assets/images/card-images/card-img-1.png" alt="card image" class="h-100 w-100 object-cover" />
@@ -979,7 +979,7 @@
                 <!-- END blog card -->
 
                 <!-- blog card -->
-                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4">
+                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4 filter community">
                     <a href="javascript:void(0);" class="blog-card d-block card-hover mb-md-3">
                         <div class="card-img overflow-hidden theme-radius-15">
                             <img src="assets/images/card-images/card-img-2.png" alt="card image" class="h-100 w-100 object-cover" />
@@ -999,7 +999,7 @@
                 <!-- END blog card -->
 
                 <!-- blog card -->
-                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4">
+                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4 filter tutoring">
                     <a href="javascript:void(0);" class="blog-card d-block card-hover mb-md-3">
                         <div class="card-img overflow-hidden theme-radius-15">
                             <img src="assets/images/card-images/card-img-4.png" alt="card image" class="h-100 w-100 object-cover" />
@@ -1044,7 +1044,7 @@
         <div class="container py-5">
             <div class="row mt-md-4">
                 <!-- blog card -->
-                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4">
+                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4 filter community">
                     <a href="javascript:void(0);" class="blog-card d-block card-hover mb-md-3">
                         <div class="card-img overflow-hidden theme-radius-15">
                             <img src="assets/images/card-images/card-img-1.png" alt="card image" class="h-100 w-100 object-cover" />
@@ -1064,7 +1064,7 @@
                 <!-- END blog card -->
 
                 <!-- blog card -->
-                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4">
+                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4 filter tutoring">
                     <a href="javascript:void(0);" class="blog-card d-block card-hover mb-md-3">
                         <div class="card-img overflow-hidden theme-radius-15">
                             <img src="assets/images/card-images/card-img-2.png" alt="card image" class="h-100 w-100 object-cover" />
@@ -1084,7 +1084,7 @@
                 <!-- END blog card -->
 
                 <!-- blog card -->
-                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4">
+                <div class="col-12 col-md-6 col-lg-4 pb-5 mb-4 filter community">
                     <a href="javascript:void(0);" class="blog-card d-block card-hover mb-md-3">
                         <div class="card-img overflow-hidden theme-radius-15">
                             <img src="assets/images/card-images/card-img-4.png" alt="card image" class="h-100 w-100 object-cover" />
