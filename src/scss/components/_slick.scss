@@ -170,8 +170,7 @@
         right: 56px;
         border-radius: 30px 0 0 30px;
         &:before {
-            transform: rotate(180deg);
-            background-position-x: 6px;
+            transform: scaleX(-1) translateX(-5px);
         }
     }
 

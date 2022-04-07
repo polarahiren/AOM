@@ -586,6 +586,35 @@ body.login-page{
 // END blog page
 
 //member area open page
+.service-slider{
+    .service-image{
+        img{
+            height: 460px;
+        }
+    }
+    .slick-arrow{
+        transform: translate(0px);
+    }
+}
+
+.member-detail{
+    img.bottom-arrow-img {
+        position: absolute;
+        width: auto;
+        height: auto;
+        bottom: 0;
+        right: 0;
+        z-index: 9;
+        transform: translateY(50%);
+        max-width: 415px;
+
+        @include media-breakpoint-down(lg){
+            max-width: 250px;
+        }
+    }
+
+}
+
 .related-post-slider{
     .blog-card .card-img{
         height: 310px;
