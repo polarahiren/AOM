@@ -24,6 +24,12 @@ body.login-page{
         right: -120px;
         width: 200px;
         height: 182px;
+        @include media-breakpoint-down(md){
+            top: -70px;
+            right: 0px;
+            width: 100px;
+            height: 82px;
+        }
     }
 }
 

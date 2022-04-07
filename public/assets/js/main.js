@@ -11804,22 +11804,12 @@ var App = /*#__PURE__*/function () {
         autoplay: true,
         dots: false,
         responsive: [{
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 5
-          }
-        }, {
-          breakpoint: 1024,
+          breakpoint: 1400,
           settings: {
             slidesToShow: 4
           }
         }, {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 3
-          }
-        }, {
-          breakpoint: 480,
+          breakpoint: 1024,
           settings: {
             slidesToShow: 3
           }
@@ -11857,6 +11847,21 @@ var App = /*#__PURE__*/function () {
         speed: 300,
         autoplay: false,
         slidesToShow: 2,
+        responsive: [{
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
+      }); // the blog slider for member area page
+
+      $('.related-post-slider').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        speed: 300,
+        autoplay: false,
+        slidesToShow: 3,
         responsive: [{
           breakpoint: 991,
           settings: {
