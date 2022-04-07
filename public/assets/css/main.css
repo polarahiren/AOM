@@ -16340,38 +16340,72 @@ button,
   background-color: #06423F;
 }
 
-header {
+body.header-transparent .fake-header {
+  display: none !important;
+}
+body.header-transparent header {
+  background-color: transparent;
+}
+body.header-transparent header .navbar ul li a {
+  color: #ffffff;
+}
+@media (max-width: 990.98px) {
+  body.header-transparent .logo.navbar-brand svg,
+body.header-transparent .navbar-toggler {
+    color: #ffffff;
+  }
+}
+@media (max-width: 990.98px) {
+  body.header-transparent .header-fixed .logo.navbar-brand svg,
+body.header-transparent .header-fixed .navbar-toggler {
+    color: #06423F;
+  }
+}
+@media (min-width: 991px) {
+  body.header-transparent .navbar .logo,
+body.header-transparent ul li a.menu-item {
+    color: #ffffff;
+  }
+}
+
+body.header-transparent.fixed-bg header {
+  background-color: #FFFFFF;
+}
+body.header-transparent.fixed-bg header a:not(.btn) {
+  color: #06423F !important;
+}
+
+body header {
   background-color: #FFFFFF;
   z-index: 999;
 }
 @media (min-width: 1400px) {
-  header .container {
+  body header .container {
     max-width: 1420px;
   }
 }
-header.header-fixed {
-  box-shadow: 0px 0px 3px #ccc;
+body header.header-fixed {
+  background-color: #FFFFFF;
 }
-header.header-fixed .top-bar {
+body header.header-fixed .top-header {
   display: none !important;
 }
 @media (min-width: 991px) {
-  header.header-fixed .custom-mega-menu {
-    top: 90px;
+  body header.header-fixed .navbar {
+    padding: 10px 0px !important;
+  }
+  body header.header-fixed a:not(.btn) {
+    color: #06423F !important;
   }
 }
 
-@media (min-width: 991px) {
-  .navbar #navbarHeader {
-    padding: 0px;
-  }
-}
-@media (min-width: 991px) and (max-width: 1199.98px) {
-  .navbar #navbarHeader {
-    font-size: 16px;
-  }
+.navbar {
+  transition: 0.4s all ease-in-out;
 }
 
+.menu > ul > li a.active {
+  opacity: 0.4;
+}
 @media (max-width: 990.98px) {
   .menu > ul > li {
     margin-bottom: 50px;
@@ -16469,6 +16503,9 @@ header.header-fixed .top-bar {
     max-height: 100%;
     overflow-y: auto;
   }
+  .custom-mega-menu .theme-card:before {
+    display: none;
+  }
   .custom-mega-menu .theme-card .body-card {
     position: relative;
     color: #06423F !important;
@@ -16484,6 +16521,9 @@ header.header-fixed .top-bar {
     padding-left: 12px;
     padding-right: 12px;
   }
+}
+.custom-mega-menu .mega-menu-back svg {
+  transform: scaleX(-1);
 }
 
 .mega-menu + .custom-mega-menu.show {
