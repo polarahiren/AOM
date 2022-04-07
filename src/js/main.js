@@ -140,3 +140,12 @@ $(document).ready(function(){
 });
 
 // END tab filter js
+
+
+// transparent header for lg screens
+$(document).ready(function() {
+    if ($(window).width() < 992) {
+        $('.header-lg-transparent').removeClass('header-transparent');
+    }
+});
+// END transparent header for lg screens
