@@ -627,6 +627,15 @@ body.login-page{
 
 
 // about us page
+.process-section h2 {
+    border-bottom: 3px solid $warning;
+    display: inline-block;
+    
+    @include media-breakpoint-up(md){
+        line-height: 1;
+    }
+}
+
 .process-card {
     img {
         width: 260px;
@@ -664,4 +673,5 @@ body.login-page{
         line-height: 24px;
     }
 }
+
 // END about us page
