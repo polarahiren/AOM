@@ -624,3 +624,44 @@ body.login-page{
     }
 }
 // END member area open page
+
+
+// about us page
+.process-card {
+    img {
+        width: 260px;
+        height: 260px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 200px;
+    }
+    .position-relative span{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        background: $warning;
+        border-radius: 100%;
+        font-size: 47px;
+        line-height: 77px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 7px;
+        position: absolute;
+        bottom: -20px;
+        left: -10px;
+        z-index: 1;
+
+        @include media-breakpoint-down(md){
+            width: 85px;
+            height: 85px;
+            font-size: 36px;
+            left: 10px;
+        }
+    }
+
+    p{
+        letter-spacing: -0.14px;
+        line-height: 24px;
+    }
+}
+// END about us page
