@@ -45,6 +45,14 @@ body.header-transparent{
 }
 // END  transparent header
 
+// mega menu open in screen top 
+body.header-transparent.fixed-bg header{
+    background-color: #FFFFFF;
+    a:not(.btn){
+        color: $primary !important;
+    }
+} 
+// mega menu open in screen top
 
 
 body header {
@@ -63,7 +71,11 @@ body header {
         .top-header {
             display: none !important;
         }
+
         @include media-breakpoint-up(lg) {
+            .navbar{
+                padding:10px 0px !important;
+            }
             a:not(.btn){
                 color: $primary !important;
             }
@@ -76,16 +88,9 @@ body header {
 }
 
 .navbar {
-    #navbarHeader {
-        @include media-breakpoint-up(lg) {
-            padding: 0px;
-        }
-
-        @include media-breakpoint-between(lg, xl) {
-            font-size: 16px;
-        }
-    }
+    transition: 0.4s all ease-in-out;
 }
+
 
 .menu {
     >ul>li {
