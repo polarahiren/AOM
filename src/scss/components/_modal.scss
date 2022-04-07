@@ -212,6 +212,8 @@
     }
     .modal-content{
         border-radius: 17px;
+        border: 0;
+        
         @include media-breakpoint-down(md){
             height: 100%;
             border-radius: 0;

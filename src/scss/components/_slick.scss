@@ -143,6 +143,12 @@
     }
 }
 
+.slick-warning-dots{
+    ul.slick-dots li button{
+        background-color: $warning;
+    }
+}
+
 .slick-indicators-bottom-right{
     .slick-arrow {
         height: 57px;
