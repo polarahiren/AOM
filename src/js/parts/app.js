@@ -145,6 +145,24 @@ export class App{
       ]
   });
 
+  // the blog slider for member area page
+  $('.related-post-slider').slick({
+      dots: false,
+      arrows: false,
+      infinite: false,
+      speed: 300,
+      autoplay: false,
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+              slidesToShow: 1,
+          }
+        }
+      ]
+  });
+
   }
 
   slickSLider (){
