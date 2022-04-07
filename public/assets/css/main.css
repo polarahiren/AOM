@@ -15673,9 +15673,6 @@ button,
   border-radius: 6px;
 }
 
-.select2-container {
-  width: 100%;
-}
 .select2-container .select2-selection {
   border: 1px solid rgba(6, 66, 63, 0.46);
   height: auto;
@@ -15711,7 +15708,8 @@ button,
   font-size: 16px;
 }
 .select2-dropdown .select2-results__option.select2-results__option--highlighted {
-  background-color: #06423F;
+  background-color: #ffffff;
+  color: #06423F;
 }
 
 .checkbox-control .theme-checkbox {
@@ -15747,6 +15745,7 @@ button,
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
+  background-size: 22px !important;
 }
 .checkbox-control.checkbox-large input:checked + .theme-checkbox:before {
   transform: translate(-50%, -50%) scale(1);
@@ -15760,7 +15759,7 @@ button,
   background: transparent;
 }
 .checkbox-control.checkbox-light .theme-checkbox::before {
-  background: #ffffff;
+  background: url(../images/icons/check-icon.svg);
 }
 .checkbox-control input {
   position: absolute;

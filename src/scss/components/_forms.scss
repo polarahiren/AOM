@@ -44,7 +44,7 @@
 }
 
 .select2-container{
-    width: 100%;
+    // width: 100%;
     .select2-selection{
         border: 1px solid rgba(6, 66, 63, 0.46);
         height: auto;
@@ -82,7 +82,8 @@
         padding: 10px 16px;
         font-size: $bodyM;
         &.select2-results__option--highlighted{
-            background-color: $primary;
+            background-color: $white;
+            color: $primary;
         }
     }
 }
@@ -123,6 +124,7 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%) scale(0);
+                background-size: 22px !important;
             }
         }
         & input:checked + .theme-checkbox:before{
@@ -138,7 +140,7 @@
             border-color: $white;
             background: transparent;
             &::before{
-                background: $white;
+                background: url(../images/icons/check-icon.svg);
             }
         }
     }
