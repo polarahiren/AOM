@@ -1,52 +1,112 @@
 
-header {
+
+//   transparent header
+body.header-transparent{
+    .fake-header{
+        display: none !important;
+    }
+    
+    header {
+        background-color: transparent;
+
+        .navbar{
+            ul li {
+                a{
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .logo.navbar-brand svg,
+    .navbar-toggler{
+        @include media-breakpoint-down(lg) {
+            color: $white;
+        }
+    }
+
+    .header-fixed {
+        .logo.navbar-brand svg,
+        .navbar-toggler{
+            @include media-breakpoint-down(lg) {
+                color: $primary;
+            }
+        }
+    }
+
+
+    @include media-breakpoint-up(lg) {
+        .navbar .logo,
+        ul li a.menu-item{
+            color: $white;
+        }
+    }
+
+}
+// END  transparent header
+
+// mega menu open in screen top 
+body.header-transparent.fixed-bg header{
+    background-color: #FFFFFF;
+    a:not(.btn){
+        color: $primary !important;
+    }
+} 
+// mega menu open in screen top
+
+
+body header {
     background-color: #FFFFFF;
     z-index: 999;
-  
+
     @include media-breakpoint-up(xxl) {
         .container {
             max-width: 1420px;
         }
     }
-  
+
     &.header-fixed {
-        box-shadow: 0px 0px 3px #ccc;
-  
-        .top-bar {
+        background-color: #FFFFFF;
+
+        .top-header {
             display: none !important;
         }
-  
+
         @include media-breakpoint-up(lg) {
+            .navbar{
+                padding:10px 0px !important;
+            }
+            a:not(.btn){
+                color: $primary !important;
+            }
+
             .custom-mega-menu {
-                top: 90px;
+                // top: 90px;
             }
         }
     }
-  }
-  
-  .navbar {
-    #navbarHeader {
-        @include media-breakpoint-up(lg) {
-            padding: 0px;
+}
+
+.navbar {
+    transition: 0.4s all ease-in-out;
+}
+
+
+.menu {
+    >ul>li {
+        a.active {
+            opacity: 0.4;
         }
-  
-        @include media-breakpoint-between(lg, xl) {
-            font-size: 16px;
-        }
-    }
-  }
-  
-  .menu {
-    > ul > li {
+
         @include media-breakpoint-down(lg) {
             margin-bottom: 50px;
 
-            & > a {
+            &>a {
                 font-size: 28px;
                 line-height: 1.3;
             }
 
-            .btn-primary{
+            .btn-primary {
                 font-size: 16px;
                 background-color: $info;
                 padding: 14px 60px 14px 26px;
@@ -57,10 +117,10 @@ header {
             }
         }
     }
-  
-  }
-  
-  @include media-breakpoint-down(lg) {
+
+}
+
+@include media-breakpoint-down(lg) {
     #navbarHeader {
         position: fixed;
         top: 0px;
@@ -73,15 +133,16 @@ header {
         flex-direction: column;
         z-index: 999;
         overflow-y: auto;
-  
+
         &.show {
             display: flex;
         }
 
-        a{
+        a {
             color: $white;
         }
     }
+
     .mob-container {
         width: 100%;
         max-width: 720px;
@@ -89,27 +150,28 @@ header {
         padding-right: 12px !important;
         margin: 0 auto !important;
     }
-  }
-  
-  @include media-breakpoint-down(md) {
+}
+
+@include media-breakpoint-down(md) {
     .mob-container {
         max-width: 540px;
     }
+
     #navbarHeader {
         padding: 10px 12px;
     }
-  }
-  
-  @include media-breakpoint-down(sm) {
+}
+
+@include media-breakpoint-down(sm) {
     .mob-container {
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
-  }
-  
-  
-  /* mega menu css */
-  .custom-mega-menu {
+}
+
+
+/* mega menu css */
+.custom-mega-menu {
     background-color: #F8F8F8;
     position: fixed;
     left: 0;
@@ -119,20 +181,20 @@ header {
     transition: 0.4s all ease-in-out;
     opacity: 0;
     visibility: hidden;
-  
+
     @include media-breakpoint-up(lg) {
         padding: 2.5rem 0px 4rem !important;
         position: absolute;
-  
+
         .card-with-inner-body {
             .card-body {
                 padding: 20px;
-  
+
                 .card-title {
                     margin-bottom: 15px;
                 }
             }
-  
+
             img {
                 height: 320px;
             }
@@ -144,18 +206,24 @@ header {
         height: 100%;
         max-height: 100%;
         overflow-y: auto;
-        
-        .theme-card .body-card{
-            position: relative;
-            color: $primary !important;
-            transform: none;
-            padding: 15px 10px !important;        
 
-            .btn-with-icon{
+        .theme-card {
+            &:before {
                 display: none;
             }
+
+            .body-card {
+                position: relative;
+                color: $primary !important;
+                transform: none;
+                padding: 15px 10px !important;
+
+                .btn-with-icon {
+                    display: none;
+                }
+            }
         }
-        
+
     }
 
     @include media-breakpoint-down(sm) {
@@ -164,19 +232,25 @@ header {
             padding-right: 12px;
         }
     }
-  }
-  
-  .mega-menu + .custom-mega-menu.show {
+
+    .mega-menu-back svg {
+        transform: scaleX(-1);
+    }
+}
+
+.mega-menu+.custom-mega-menu.show {
     opacity: 1;
     visibility: visible;
-  }
-  
-  .fixed-bg {
+}
+
+
+
+.fixed-bg {
     overflow: hidden;
     transition: 0.4s all ease-in-out;
-  }
-  
-  .fixed-bg .menu-bg-overlay {
+}
+
+.fixed-bg .menu-bg-overlay {
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
@@ -184,14 +258,14 @@ header {
     left: 0px;
     right: 0px;
     z-index: 99;
-  }
-  
-  .contact-card{
+}
+
+.contact-card {
     @include media-breakpoint-down(md) {
         padding: 0px;
-        
-        .theme-radius-15{
+
+        .theme-radius-15 {
             border-radius: 0px;
         }
     }
-  }
+}
