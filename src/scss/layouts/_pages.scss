@@ -627,6 +627,38 @@ body.login-page{
 
 
 // about us page
+.about-hero-section{
+    h2{
+        font-size: 80px;
+        line-height: 70px;
+
+        @include media-breakpoint-down(lg){
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+    
+    @include media-breakpoint-up(md){
+        .box-large-image{
+            width: 45%;
+        }
+        .story-box{
+            width: 55%;
+            margin-top: 160px;
+        }
+    }
+
+    @include media-breakpoint-down(md){
+        .box-large-image{
+                height: 540px !important;
+        }
+        .story-box{
+            padding-top: 220px !important;
+        }
+    }
+}
+
+
 .process-section h2 {
     border-bottom: 3px solid $warning;
     display: inline-block;
