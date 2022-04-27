@@ -52,7 +52,7 @@ body.login-page{
     z-index: 9;
     @include media-breakpoint-down(lg){
         padding: 20px 25px;
-        border-radius: 25px;
+        border-radius: 22px;
     }
     @include media-breakpoint-up(md){
         position: sticky;
@@ -131,17 +131,20 @@ body.login-page{
             height: 485px;
         }
 
+        &:before{
+            content: "";
+            width: 100%;
+            height: 245px; 
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 0;
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        }
         @include media-breakpoint-up(md){
             &:before{
-                content: "";
-                width: 100%;
                 height: 550px; 
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                z-index: 0;
-                background: -webkit-linear-gradient(top, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-                background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             }
         }
     }
@@ -393,9 +396,6 @@ body.login-page{
         .service-slider{
             margin-left: -12px;
             margin-right: -12px;
-            img{
-                height: 271px;
-            }
             .slick-arrow{
                 display: none !important;
             }
@@ -614,6 +614,9 @@ body.login-page{
     .service-image{
         img{
             height: 460px;
+            @include media-breakpoint-down(md){
+                height: 271px;
+            }
         }
     }
     .slick-arrow{
@@ -659,6 +662,19 @@ body.login-page{
         @include media-breakpoint-down(lg){
             font-size: 40px;
             line-height: 40px;
+        }
+    }
+
+    .story-box{
+        svg{
+            position: absolute;
+            left: 360px;
+            top: -80px;
+            @include media-breakpoint-down(md){
+                width: 130px;
+                top: 90px;
+                left: 180px;
+            }
         }
     }
     
@@ -727,6 +743,13 @@ body.login-page{
     p{
         letter-spacing: -0.14px;
         line-height: 24px;
+    }
+}
+
+@include media-breakpoint-down(md){
+    .sm-device-space{
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
 

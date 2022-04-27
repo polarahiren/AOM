@@ -64,6 +64,20 @@ body header {
             max-width: 1420px;
         }
     }
+    .top-header{
+        ul{
+            li{
+                a {
+                    padding: 8px 10px;
+                }
+                &:first-child{
+                    a{
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
 
     &.header-fixed {
         background-color: #FFFFFF;
