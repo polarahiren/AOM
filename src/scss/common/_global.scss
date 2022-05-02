@@ -268,9 +268,10 @@ li {
 }
 
 //changes css
-main{
+main.what-i-do-page{
   overflow-x: hidden;
 }
+
 // responsive css
 @include media-breakpoint-down(md) {
 

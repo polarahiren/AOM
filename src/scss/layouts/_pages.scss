@@ -378,6 +378,10 @@ body.login-page{
         position: absolute;
         top: 0;
         transform: translateX(-50%);
+
+        // @include media-breakpoint-down(md){
+        //     width: 100%;
+        // }
     }
 }
 
