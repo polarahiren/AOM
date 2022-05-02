@@ -29,13 +29,13 @@ footer{
         background: -webkit-linear-gradient(top, transparent 0%, transparent calc(0% + 210px), $primary calc(0% + 210px), $primary 100%);
     }
     .footer-bg{
-        background-image: url(../images/footer/footer-Intersection.svg);
+        background-image: url("../images/footer/footer-Intersection.svg");
         background-position: bottom right;
         background-repeat: no-repeat;
         background-size: contain;
         @include media-breakpoint-down(md){
-            background-image: url(../images/footer/footer-Intersection-mobile.svg);
-            background-position: bottom left;
+            background-image: url("../images/footer/footer-Intersection-mobile.svg");
+            background-size: cover;
         }
     }
     .container{

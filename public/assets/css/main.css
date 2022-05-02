@@ -14853,6 +14853,10 @@ li {
   }
 }
 
+main {
+  overflow-x: hidden;
+}
+
 p.error-message {
   margin-top: 5px;
   color: #ff0000;
@@ -16210,9 +16214,6 @@ body header {
     max-width: 1420px;
   }
 }
-body header .top-header ul li a {
-  padding: 8px 10px;
-}
 body header .top-header ul li:first-child a {
   padding-left: 0;
 }
@@ -16422,15 +16423,15 @@ footer {
   }
 }
 footer .footer-bg {
-  background-image: url(../images/footer/footer-Intersection.svg);
+  background-image: url("../images/footer/footer-Intersection.svg");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: contain;
 }
 @media (max-width: 767.98px) {
   footer .footer-bg {
-    background-image: url(../images/footer/footer-Intersection-mobile.svg);
-    background-position: bottom left;
+    background-image: url("../images/footer/footer-Intersection-mobile.svg");
+    background-size: cover;
   }
 }
 @media (min-width: 1400px) {
@@ -16869,11 +16870,6 @@ body.login-page main {
   top: 0;
   transform: translateX(-50%);
 }
-@media (max-width: 767.98px) {
-  .service-testimonial:before {
-    width: 100%;
-  }
-}
 
 @media (max-width: 767.98px) {
   .scrollspy-example .service-image {
@@ -16882,10 +16878,7 @@ body.login-page main {
   }
   .scrollspy-example .service-image img {
     border-radius: 0;
-  }
-  .scrollspy-example .service-slider {
-    margin-left: -12px;
-    margin-right: -12px;
+    width: 100%;
   }
   .scrollspy-example .service-slider .slick-arrow {
     display: none !important;
@@ -16939,6 +16932,10 @@ body.login-page main {
 
 @media (max-width: 767.98px) {
   .service-slider {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .service-slider .slick-list {
     margin-left: -12px;
     margin-right: -12px;
   }
@@ -17219,12 +17216,6 @@ body.login-page main {
   line-height: 24px;
 }
 
-@media (max-width: 767.98px) {
-  .sm-device-space {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-}
 .popup--block__image {
   height: 350px;
 }

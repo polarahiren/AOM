@@ -266,3 +266,12 @@ li {
     }
   }
 }
+
+//changes css
+main{
+  overflow-x: hidden;
+}
+// responsive css
+@include media-breakpoint-down(md) {
+
+}
